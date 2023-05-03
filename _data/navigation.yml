@@ -1,0 +1,61 @@
+# main links
+main:
+  - title: "Bien débuter"
+    url: /quick-start/
+  - title: "Python 101"
+    url: /python-basics/
+  - title: "Géoinfo 101"
+    url: /gis-level1/
+  - title: "Géoinfo 201"
+    url: /gis-level2/
+quick-links:
+  - title: "Bien débuter"
+    children:      
+      - title: "L’environnement de développement"
+        url: /quick-start/#lenvironnement-de-d%C3%A9veloppement      
+      - title: "Les outils à connaître"
+        url: /quick-start/#les-outils-%C3%A0-conna%C3%AEtre
+      - title: "Mettre en place son environnement"
+        url: /quick-start/#mettre-en-place-son-environnement
+      - title: "Autres manières de développer : Jupyter Notebook"
+        url: /quick-start/#autres-mani%C3%A8res-de-d%C3%A9velopper--jupyter-notebook
+      - title: "Vidéos utiles"
+        url: /quick-start/#vid%C3%A9os-utiles
+  - title: Notions de base en Python
+    children:
+      - title: "Règles de base"
+        url: /python-basics/#r%C3%A8gles-de-base
+      - title: "Les variables"
+        url: /python-basics/#les-variables
+      - title: "Les opérateurs"
+        url: /python-basics/#les-op%C3%A9rateurs
+      - title: "Les listes"
+        url: /python-basics/#les-listes
+      - title: "Les boucles"
+        url: /python-basics/#les-boucles
+      - title: "Les conditions"
+        url: /python-basics/#les-conditions
+      - title: "Les fonctions"
+        url: /python-basics/#les-fonctions
+  - title: Premières notions en GéoInfo
+    children:
+      - title: "Installer vos librairies"
+        url: /gis-level1/#installer-vos-librairies
+      - title: "Lire des données spatiales"
+        url: /gis-level1/#lire-des-donn%C3%A9es-spatiales
+      - title: "Écrire des données spatiales"
+        url: /gis-level1/#%C3%A9crire-des-donn%C3%A9es-spatiales
+      - title: "Échanges avec une BD"
+        url: /gis-level1/#%C3%A9changes-avec-une-bd
+      - title: "Vidéos utiles"
+        url: /gis-level1/#vid%C3%A9os-utiles
+  - title: Notions avancées en GéoInfo
+    children:
+      - title: "Shapely"
+        url: /gis-level2/#shapely
+      - title: "Rtree (index spatial)"
+        url: /gis-level2/#rtree-index-spatial
+      - title: "Django"
+        url: /gis-level2/#django
+      - title: "QGis"
+        url: /gis-level2/#qgis
