@@ -23,6 +23,18 @@ quick-links:
         url: /quick-start/#autres-mani%C3%A8res-de-d%C3%A9velopper--jupyter-notebook
       - title: "Vidéos utiles"
         url: /quick-start/#vid%C3%A9os-utiles
+  - title: Notions de base en JavaScript
+    children:
+      - title: "Règles de base"
+        url: /js-basics/#r%C3%A8gles-de-base
+      - title: "Les variables"
+        url: /js-basics/#les-variables
+      - title: "Les boucles"
+        url: /js-basics/#les-boucles
+      - title: "Les conditions"
+        url: /js-basics/#les-conditions
+      - title: "Les fonctions"
+        url: /js-basics/#les-fonctions
   - title: Notions de base en Python
     children:
       - title: "Règles de base"
