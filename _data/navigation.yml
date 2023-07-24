@@ -2,6 +2,8 @@
 main:
   - title: "Bien débuter"
     url: /quick-start/
+  - title: "Activer Copilot"
+    url: /vscode-ai/
   - title: "Python 101"
     url: /python-basics/
   - title: "Géoinfo 101"
