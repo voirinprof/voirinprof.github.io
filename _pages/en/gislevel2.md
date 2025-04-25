@@ -1,191 +1,114 @@
 ---
-title: "First Concepts in GeoInfo"
-permalink: /en/gis-level1/
+title: "Advanced concepts of Geoinfo"
+permalink: /en/gis-level2/
 lang: en
 date: 2023-04-24T03:02:20+00:00
 toc: true
 toc_label: "On this page"
 ---
 
-> **_NOTE:_** The [Yves’ Cookbook on GitHub](https://github.com/yvoirin/cookbook_python3) provides many useful code examples for geomatics. This [YouTube channel](https://www.youtube.com/@YvesVoirin) also offers plenty of resources.
+> **_NOTE:_** The [CookBook by Yves on GitHub](https://github.com/yvoirin/cookbook_python3) provides many useful code examples for geomatics professionals. This [YouTube channel](https://www.youtube.com/@YvesVoirin) also offers a wealth of resources.
 
-## Installing Your Libraries
+## Shapely: Geometric Operations in Python
 
-The commands to install libraries are always the same. You can either use PIP:
+**Shapely** is a powerful Python library for manipulating planar geometric objects. It is built on the GEOS library (used by PostGIS) and provides:
 
-```shell
-pip install your_lib
-```
+- Support for various geometry types: points, lines, polygons, multipoints, etc.
+- Geometric operations: intersection, union, difference, distance.
+- Geometry attributes: area, length, centroid.
+- Seamless integration with libraries like GeoPandas and PyQGIS.
 
-or CONDA:
-
-```shell
-conda install your_lib
-```
-
-To get started with geomatics development, there are a few essential libraries:
-
-* **OGR/GDAL**: A long-standing C++ library used in geomatics. It allows manipulation of both vector and raster data. Installation can be tricky. It’s often easier to use `rasterio` and `fiona`, which are Python interfaces to GDAL/OGR.
-* **rasterio**: A simpler interface to GDAL for manipulating raster data.
-* **fiona**: The interface to OGR for vector data. Its consistent conventions with `rasterio` make it very user-friendly.
-* **pandas/geopandas**: For handling formatted data (e.g., CSVs). These libraries allow fast and simple data manipulation and `geopandas` can also read vector data formats, potentially replacing `fiona`.
-* **matplotlib**: Essential for producing charts and plots, a complete replacement for Excel charting.
-
-Your development environment should include these libraries. Depending on your project, additional more specific ones may be needed.
-
-## Reading Spatial Data
-
-### Vector Data
-
-Common formats Python supports include Shapefile, GeoJSON, GPKG, CSV, etc.
-
-Using `fiona`, you can read spatial data like a Shapefile:
+Example: Creating a point and a polygon:
 
 ```python
-import fiona
+from shapely.geometry import Point, Polygon
 
-# Open Shapefile
-with fiona.open('file.shp', 'r') as src:
-    for feature in src:
-        print(feature)
+# Create a point
+point = Point(0, 0)
+
+# Create a polygon
+polygon = Polygon([(0, 0), (0, 1), (1, 1), (1, 0)])
 ```
 
-Or a GeoJSON file:
+📘 [Shapely Documentation](https://shapely.readthedocs.io/)  
+🎥 [Shapely Essentials in a Few Minutes](https://youtu.be/vAvlzYwSca8)
+
+---
+
+## Rtree: Fast Spatial Indexing
+
+**Rtree** provides spatial indexing and search capabilities using R-tree data structures. It is often used alongside Shapely and GeoPandas for spatial queries.
+
+Key features:
+
+- Nearest neighbor search
+- Spatial containment and intersection queries
+- Multi-dimensional indexing
+- Disk-based storage and fast loading
+
+Example: Finding the nearest object to a point:
 
 ```python
-import fiona
+from rtree import index
 
-# Open GeoJSON file
-with fiona.open('path/to/your/file.geojson', 'r') as src:
-    for feature in src:
-        print(feature)
+# Create an Rtree index
+idx = index.Index()
+
+# Insert points
+idx.insert(1, (0, 0, 0, 0))
+idx.insert(2, (1, 1, 1, 1))
+
+# Search for the closest point to (1, 1)
+results = list(idx.nearest((1, 1, 1, 1), 1))
+print(results)
 ```
 
-An alternative to `fiona` is `geopandas`:
+📘 [Rtree Documentation](https://rtree.readthedocs.io/)  
+🎥 [Why Use Rtree? (Short Explanation)](https://youtu.be/drJkdRbSaBo)
 
-```python
-import geopandas as gpd
+---
 
-# Read the Shapefile
-gdf = gpd.read_file('path/to/your/file.shp')
+## Django & GeoDjango: Web Development with Spatial Support
 
-# Display first 5 rows
-print(gdf.head())
-```
+**Django** is a high-level Python web framework based on the MVC (Model-View-Controller) pattern. **GeoDjango** extends it to support geographic data and spatial operations.
 
-### Raster Data
+Core features:
 
-To read raster files in Python, use the `rasterio` library:
+- URL routing and view handling
+- ORM for database access and manipulation
+- Templating system for dynamic HTML rendering
+- Middleware and form validation
+- Integration with PostGIS for spatial queries via GeoDjango
 
-```python
-import rasterio
-import matplotlib.pyplot as plt
+📘 [Django Official Website](https://www.djangoproject.com/)  
+🎥 Useful Videos:
+- [Getting Started with Django](https://youtu.be/PzQ9lfjdMv4)
+- [Adding Components to a Django Site](https://youtu.be/8aF0_pfxd4w)
+- [Displaying Database Data in a Django View](https://youtu.be/FW5gaWCl1HY)
 
-# Open raster file
-with rasterio.open('my_file.tif') as src:
-    raster = src.read(1)
+---
 
-# Display the raster
-plt.imshow(raster, cmap='gray')
-plt.show()
-```
+## QGIS & PyQGIS: Plugin Development for GIS
 
-Raster files may contain multiple bands, each representing a different variable. `src.read()` can read multiple bands at once. The loaded images are NumPy arrays, enabling full use of NumPy operations.
+**QGIS** is a free and open-source desktop GIS application written in C++. It supports Python through the **PyQGIS** API, allowing developers to build plugins that interact with spatial data.
 
-## Writing Spatial Data
+To build a QGIS plugin:
 
-### Vector Data
+1. Use Qt Designer to create the plugin interface.
+2. Use Plugin Builder to generate the plugin’s structure.
+3. Write Python code using the QGIS API to implement functionality.
 
-Suppose you have a list of features called `features` that you want to write to a Shapefile named `my_file.shp`:
+💡 Tip: Development is accelerated by tools like Plugin Builder, but familiarity with PyQt5 and the QGIS API is essential.
 
-```python
-import fiona
+📘 [PyQGIS Developer Cookbook](https://docs.qgis.org/latest/en/docs/pyqgis_developer_cookbook/index.html)  
+🎥 Helpful Videos:
+- [Building a Basic QGIS Plugin](https://youtu.be/pnDr149JMWU)
+- [Creating a Vector Layer Plugin (QGIS 3.4)](https://youtu.be/hMbzWsq0-bI)
+- [Customizing Plugin Interfaces with Qt Designer](https://youtu.be/1VDnon52M4E)
 
-schema = {
-    'geometry': 'Point',
-    'properties': {
-        'name': 'str',
-        'value': 'int'
-    }
-}
+---
 
-with fiona.open('my_file.shp', 'w', 'ESRI Shapefile', schema) as dst:
-    for feature in features:
-        dst.write(feature)
-```
+## Additional Resources
 
-The `schema` defines the geometry type and attributes. Here, it's a Point geometry with two attributes: a string (`name`) and an integer (`value`).
-
-### Raster Data
-
-Suppose you have a NumPy matrix called `matrix` to write to a GeoTIFF file named `my_file.tif`:
-
-```python
-import rasterio
-
-height, width = matrix.shape
-
-metadata = {
-    'count': 1,
-    'crs': 'EPSG:4326',
-    'dtype': 'float32',
-    'driver': 'GTiff',
-    'height': height,
-    'width': width,
-    'transform': rasterio.transform.from_bounds(0, 0, width, height, width, height),
-    'nodata': -9999
-}
-
-with rasterio.open('my_file.tif', 'w', **metadata) as dst:
-    dst.write(matrix, 1)
-```
-
-The `metadata` dictionary defines the raster’s properties such as number of bands, spatial reference, data type, and geotransform. `from_bounds()` sets the spatial extent and resolution.
-
-## Database Interactions
-
-To interact with a spatial database in Python, use `pandas` or `geopandas` for importing, manipulating, and exporting tabular data. You’ll also need a connector library like `psycopg2` (PostgreSQL) or `pyodbc` (SQL Server).
-
-To load spatial data from a PostgreSQL table `my_spatial_data` into a `DataFrame`:
-
-```python
-import pandas as pd
-import psycopg2
-
-conn = psycopg2.connect("dbname=my_database user=my_user password=my_password")
-
-df = pd.read_sql_query("SELECT * FROM my_spatial_data", conn)
-
-conn.close()
-```
-
-For spatial databases, use `geopandas`:
-
-```python
-import geopandas as gpd
-import psycopg2
-
-conn = psycopg2.connect("dbname=my_database user=my_user password=my_password")
-
-gdf = gpd.read_postgis("SELECT * FROM my_spatial_data", conn, geom_col="geom")
-
-conn.close()
-```
-
-This returns a `GeoDataFrame` that includes both attributes and geometries, allowing for full geospatial analysis and export.
-
-## Useful Videos
-
-Here is a series of videos covering the concepts in this page:
-
-* [Various ways to read vector and raster data with Python 3](https://youtu.be/QsnectEfqTo)
-* [Reading and processing images with Numpy](https://youtu.be/YxnHey-V2Eg)
-* [Basic operations with Numpy](https://youtu.be/V8Yk6j_gpxs)
-* [NDVI calculation using Numpy, GDAL, and Matplotlib](https://youtu.be/-mJ0WnMlwQc)
-* [Read CSV data and create a matrix with Numpy, then display with Matplotlib](https://youtu.be/cnITO_D9A8I)
-* [Using Kaggle to analyze data (Pandas, Matplotlib, and folium)](https://youtu.be/XHOG8GqT15Y)
-* [Getting started with Pandas and Anaconda (Spyder)](https://youtu.be/8j4vRloPyzU)
-* [Analyzing multiple CSV files with Pandas (Bixi data example)](https://youtu.be/Qn6lGCDslhw)
-* [Consolidating CSV files with Pandas](https://youtu.be/NKKu_-8-kGY)
-* [Using Geopandas](https://youtu.be/hONrwu8Kbx4)
-* [How to write a GeoTIFF or Shapefile with Rasterio and Fiona in a few lines](https://youtu.be/dJYH0jnydHI)
+- 📘 [Cookbook on GitHub (by Yves)](https://github.com/yvoirin/cookbook_python3) – Code examples for geospatial Python.
+- 🎥 [Yves Voirin’s YouTube Channel](https://www.youtube.com/@YvesVoirin) – Tutorials on GIS and Python topics.
