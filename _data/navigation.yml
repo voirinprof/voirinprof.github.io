@@ -11,6 +11,10 @@ main:
       url: /en/gis-level1/
     - title: "Geoinfo 201"
       url: /en/gis-level2/
+    - title: "Docker"
+      url: /en/gis-docker/
+    - title: "Web Services"
+      url: /en/web-python-api/
   fr:
     - title: "Bien débuter"
       url: /fr/quick-start/
@@ -22,6 +26,10 @@ main:
       url: /fr/gis-level1/
     - title: "Géoinfo 201"
       url: /fr/gis-level2/
+    - title: "Docker"
+      url: /fr/gis-docker/
+    - title: "Web Services"
+      url: /fr/web-python-api/
 quick-links:
   en:
     - title: "Getting Started"

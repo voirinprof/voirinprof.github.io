@@ -7,10 +7,15 @@ layout: default
 {% elsif page.header.video.id and page.header.video.provider %}
   {% include page__hero_video.html %}
 {% endif %}
-
+<style>
+  .page.page-full {
+    padding-right: 0!important;
+  }
+</style>
 <div id="main" role="main">
   {% include sidebar.html %}
-  <article class="page h-entry">
+  <!-- if page.full add class -->
+  <article class="page h-entry {% if page.full %} page-full{% endif %}">
     <div class="page__inner-wrap">
       <section class="page__content e-content" itemprop="text">
         {{ content }}</section>

@@ -2,7 +2,7 @@
 title: "Notions avancées en GéoInfo"
 permalink: /fr/gis-level2/
 lang: fr
-date: 2023-04-24T03:02:20+00:00
+date: 2025-04-24T03:02:20+00:00
 toc: true
 toc_label: "Dans cette page"
 ---
