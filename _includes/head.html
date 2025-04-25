@@ -23,3 +23,60 @@
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
+<!-- <ul class="lang-switcher">
+  <li><a href="/fr/">Français</a></li>
+  <li><a href="/en/">English</a></li>
+</ul> -->
+<header>
+  <nav class="nav-lang">
+    <a href="{{ site.baseurl }}/{{ page.lang }}/">{{ site.data.translations[page.lang].home }}</a>
+    <a href="{{ site.baseurl }}/{{ page.lang }}/about/">{{ site.data.translations[page.lang].about }}</a>
+    <!-- Sélecteur de langue -->
+    <div class="lang-switcher">
+      {% if page.lang == 'fr' %}
+        <a href="{{ page.permalink | replace: '/fr/', '/en/' }}" class="lang-link">EN</a>
+      {% else %}
+        <a href="{{ page.permalink | replace: '/en/', '/fr/' }}" class="lang-link">FR</a>
+      {% endif %}
+    </div>
+  </nav>
+</header>
+<style>
+nav.nav-lang {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.1rem;
+  background-color: #252a34;
+  font-family: Arial, sans-serif;
+}
+
+nav.nav-lang a {
+  text-decoration: none;
+  color: #333;
+  margin-right: 0.5rem;
+  /* font-weight: 100; */
+  font-size: medium;
+}
+
+nav.nav-lang a:hover {
+  text-decoration: underline;
+}
+
+.lang-switcher {
+  margin-left: auto; /* Pousse le sélecteur à droite */
+}
+
+.lang-link {
+  padding: 0.25rem 0.5rem;
+  background-color: #b0b4b8;
+  color: white !important;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.lang-link:hover {
+  background-color: #454546;
+  text-decoration: none;
+}
+</style>

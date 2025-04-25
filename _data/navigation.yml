@@ -1,75 +1,139 @@
 # main links
 main:
-  - title: "Bien débuter"
-    url: /quick-start/
-  - title: "Activer Copilot"
-    url: /vscode-ai/
-  - title: "Python 101"
-    url: /python-basics/
-  - title: "Géoinfo 101"
-    url: /gis-level1/
-  - title: "Géoinfo 201"
-    url: /gis-level2/
+  en:
+    - title: "Start here"
+      url: /en/quick-start/
+    - title: "Activate Copilot"
+      url: /en/vscode-ai/
+    - title: "Python 101"
+      url: /en/python-basics/
+    - title: "Geoinfo 101"
+      url: /en/gis-level1/
+    - title: "Geoinfo 201"
+      url: /en/gis-level2/
+  fr:
+    - title: "Bien débuter"
+      url: /fr/quick-start/
+    - title: "Activer Copilot"
+      url: /fr/vscode-ai/
+    - title: "Python 101"
+      url: /fr/python-basics/
+    - title: "Géoinfo 101"
+      url: /fr/gis-level1/
+    - title: "Géoinfo 201"
+      url: /fr/gis-level2/
 quick-links:
-  - title: "Bien débuter"
-    children:      
-      - title: "L’environnement de développement"
-        url: /quick-start/#lenvironnement-de-d%C3%A9veloppement      
-      - title: "Les outils à connaître"
-        url: /quick-start/#les-outils-%C3%A0-conna%C3%AEtre
-      - title: "Mettre en place son environnement"
-        url: /quick-start/#mettre-en-place-son-environnement
-      - title: "Autres manières de développer : Jupyter Notebook"
-        url: /quick-start/#autres-mani%C3%A8res-de-d%C3%A9velopper--jupyter-notebook
-      - title: "Vidéos utiles"
-        url: /quick-start/#vid%C3%A9os-utiles
-  - title: Notions de base en JavaScript
-    children:
-      - title: "Règles de base"
-        url: /js-basics/#r%C3%A8gles-de-base
-      - title: "Les variables"
-        url: /js-basics/#les-variables
-      - title: "Les boucles"
-        url: /js-basics/#les-boucles
-      - title: "Les conditions"
-        url: /js-basics/#les-conditions
-      - title: "Les fonctions"
-        url: /js-basics/#les-fonctions
-  - title: Notions de base en Python
-    children:
-      - title: "Règles de base"
-        url: /python-basics/#r%C3%A8gles-de-base
-      - title: "Les variables"
-        url: /python-basics/#les-variables
-      - title: "Les opérateurs"
-        url: /python-basics/#les-op%C3%A9rateurs
-      - title: "Les listes"
-        url: /python-basics/#les-listes
-      - title: "Les boucles"
-        url: /python-basics/#les-boucles
-      - title: "Les conditions"
-        url: /python-basics/#les-conditions
-      - title: "Les fonctions"
-        url: /python-basics/#les-fonctions
-  - title: Premières notions en GéoInfo
-    children:
-      - title: "Installer vos librairies"
-        url: /gis-level1/#installer-vos-librairies
-      - title: "Lire des données spatiales"
-        url: /gis-level1/#lire-des-donn%C3%A9es-spatiales
-      - title: "Écrire des données spatiales"
-        url: /gis-level1/#%C3%A9crire-des-donn%C3%A9es-spatiales
-      - title: "Échanges avec une BD"
-        url: /gis-level1/#%C3%A9changes-avec-une-bd
-      - title: "Vidéos utiles"
-        url: /gis-level1/#vid%C3%A9os-utiles
-  - title: Notions avancées en GéoInfo
-    children:
-      - title: "Shapely"
-        url: /gis-level2/#shapely
-      - title: "Rtree (index spatial)"
-        url: /gis-level2/#rtree-index-spatial
-      - title: "Django"
-        url: /gis-level2/#django
-      - title: "QGis"
-        url: /gis-level2/#qgis
+  en:
+    - title: "Getting Started"
+      children:      
+        - title: "The development environment"
+          url: /en/quick-start/#your-development-environment
+        - title: "The tools to know"
+          url: /en/quick-start/#tools-to-know
+        - title: "Set up your environment"
+          url: /en/quick-start/#setting-up-your-environment
+        - title: "Other ways to develop: Jupyter Notebook"
+          url: /en/quick-start/#other-ways-to-work-jupyter-notebooks
+        - title: "Useful videos"
+          url: /en/quick-start/#useful-videos
+    - title: "Basic Python Concepts"
+      children:
+        - title: "Basic rules"
+          url: /en/python-basics/#basic-rules
+        - title: "Variables"
+          url: /en/python-basics/#variables
+        - title: "Operators"
+          url: /en/python-basics/#operators
+        - title: "Lists"
+          url: /en/python-basics/#lists
+        - title: "Loops"
+          url: /en/python-basics/#loops
+        - title: "Conditions"
+          url: /en/python-basics/#conditions
+        - title: "Functions"
+          url: /en/python-basics/#functions
+    - title: "First Concepts in Geoinfo"
+      children:
+        - title: "Install your libraries"
+          url: /en/gis-level1/#installing-your-libraries
+        - title: "Read spatial data"
+          url: /en/gis-level1/#reading-spatial-data
+        - title: "Write spatial data"
+          url: /en/gis-level1/#writing-spatial-data
+        - title: "Exchanges with a database"
+          url: /en/gis-level1/#database-interactions
+        - title: "Useful videos"
+          url: /en/gis-level1/#useful-videos
+    - title: "Advanced Concepts in Geoinfo"
+      children:
+        - title: "Shapely"
+          url: /en/gis-level2/#shapely-geometric-operations-in-python
+        - title: "Rtree (index spatial)"
+          url: /en/gis-level2/#rtree-fast-spatial-indexing
+        - title: "Django"
+          url: /en/gis-level2/#django--geodjango-web-development-with-spatial-support
+        - title: "QGis"
+          url: /en/gis-level2/#qgis--pyqgis-plugin-development-for-gis
+  fr:
+    - title: "Bien débuter"
+      children:      
+        - title: "L’environnement de développement"
+          url: /quick-start/#lenvironnement-de-d%C3%A9veloppement      
+        - title: "Les outils à connaître"
+          url: /quick-start/#les-outils-%C3%A0-conna%C3%AEtre
+        - title: "Mettre en place son environnement"
+          url: /quick-start/#mettre-en-place-son-environnement
+        - title: "Autres manières de développer : Jupyter Notebook"
+          url: /quick-start/#autres-mani%C3%A8res-de-d%C3%A9velopper--jupyter-notebook
+        - title: "Vidéos utiles"
+          url: /quick-start/#vid%C3%A9os-utiles
+    - title: Notions de base en JavaScript
+      children:
+        - title: "Règles de base"
+          url: /js-basics/#r%C3%A8gles-de-base
+        - title: "Les variables"
+          url: /js-basics/#les-variables
+        - title: "Les boucles"
+          url: /js-basics/#les-boucles
+        - title: "Les conditions"
+          url: /js-basics/#les-conditions
+        - title: "Les fonctions"
+          url: /js-basics/#les-fonctions
+    - title: Notions de base en Python
+      children:
+        - title: "Règles de base"
+          url: /python-basics/#r%C3%A8gles-de-base
+        - title: "Les variables"
+          url: /python-basics/#les-variables
+        - title: "Les opérateurs"
+          url: /python-basics/#les-op%C3%A9rateurs
+        - title: "Les listes"
+          url: /python-basics/#les-listes
+        - title: "Les boucles"
+          url: /python-basics/#les-boucles
+        - title: "Les conditions"
+          url: /python-basics/#les-conditions
+        - title: "Les fonctions"
+          url: /python-basics/#les-fonctions
+    - title: Premières notions en GéoInfo
+      children:
+        - title: "Installer vos librairies"
+          url: /gis-level1/#installer-vos-librairies
+        - title: "Lire des données spatiales"
+          url: /gis-level1/#lire-des-donn%C3%A9es-spatiales
+        - title: "Écrire des données spatiales"
+          url: /gis-level1/#%C3%A9crire-des-donn%C3%A9es-spatiales
+        - title: "Échanges avec une BD"
+          url: /gis-level1/#%C3%A9changes-avec-une-bd
+        - title: "Vidéos utiles"
+          url: /gis-level1/#vid%C3%A9os-utiles
+    - title: Notions avancées en GéoInfo
+      children:
+        - title: "Shapely"
+          url: /gis-level2/#shapely
+        - title: "Rtree (index spatial)"
+          url: /gis-level2/#rtree-index-spatial
+        - title: "Django"
+          url: /gis-level2/#django
+        - title: "QGis"
+          url: /gis-level2/#qgis

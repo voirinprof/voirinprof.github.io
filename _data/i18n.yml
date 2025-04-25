@@ -1,0 +1,13 @@
+fr:
+  title: "Coder en Python en Géomatique"
+  description: "Un site avec des ressources pour le géomaticien."
+  author:
+    name: "Collectif de développeurs"
+    bio: "Le site rassemble des ressources pour le géomaticien. Il est réalisé par des développeurs bénévoles et membres du Département de Géomatique Appliquée de l'Université de Sherbrooke."
+    
+en:
+  title: "Coding in Python for Geomatics"
+  description: "A site with resources for the geomatics professional."
+  author:
+    name: "Collective of developers"
+    bio: "The site brings together resources for the geomatics professional. It is created by volunteer developers and members of the Department of Applied Geomatics at the University of Sherbrooke."

@@ -1,6 +1,7 @@
 ---
 title: "Notions de base en Python"
-permalink: /python-basics/
+permalink: /fr/python-basics/
+lang: fr
 date: 2023-04-24T03:02:20+00:00
 toc: true
 toc_label: "Dans cette page"
