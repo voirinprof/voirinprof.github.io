@@ -5,6 +5,7 @@ lang: en
 date: 2025-04-25T03:02:20+00:00
 toc: true
 toc_label: "On this page"
+typenav: gisserver
 ---
 
 ## Introduction to Docker

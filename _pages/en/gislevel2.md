@@ -5,6 +5,7 @@ lang: en
 date: 2025-04-24T03:02:20+00:00
 toc: true
 toc_label: "On this page"
+typenav: start
 ---
 
 > **_NOTE:_** The [CookBook by Yves on GitHub](https://github.com/yvoirin/cookbook_python3) provides many useful code examples for geomatics professionals. This [YouTube channel](https://www.youtube.com/@YvesVoirin) also offers a wealth of resources.

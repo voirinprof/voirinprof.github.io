@@ -5,6 +5,7 @@ lang: fr
 date: 2025-04-24T03:02:20+00:00
 toc: true
 toc_label: "Dans cette page"
+typenav: start
 ---
 > **_NOTE:_**  Le site [CookBook de Yves sur GitHub](https://github.com/yvoirin/cookbook_python3) fournit de nombreux exemples de codes utiles aux géomaticiens. Cette [chaîne Youtube](https://www.youtube.com/@YvesVoirin) offre aussi de nombreuses ressources.
 
