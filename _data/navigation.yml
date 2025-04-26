@@ -19,7 +19,7 @@ main:
     - title: "Serveur"
       url: /fr/gis-docker/
     - title: "Client"
-      url: /fr/js-html-css-basics/
+      url: /fr/js-basics/
     - title: "Divers"
       url: /fr/gis-docker/
 quick-links:
@@ -37,6 +37,8 @@ quick-links:
             url: /en/quick-start/#setting-up-your-environment
           - title: "Other ways to develop: Jupyter Notebook"
             url: /en/quick-start/#other-ways-to-work-jupyter-notebooks
+          - title: "Getting Started with GitHub Codespaces"
+            url: /en/codespaces-intro/
           - title: "Useful videos"
             url: /en/quick-start/#useful-videos
       - title: "Basic Python Concepts"
@@ -67,16 +69,7 @@ quick-links:
             url: /en/gis-level1/#database-interactions
           - title: "Useful videos"
             url: /en/gis-level1/#useful-videos
-      - title: "Advanced Concepts in Geoinfo"
-        children:
-          - title: "Shapely"
-            url: /en/gis-level2/#shapely-geometric-operations-in-python
-          - title: "Rtree (index spatial)"
-            url: /en/gis-level2/#rtree-fast-spatial-indexing
-          - title: "Django"
-            url: /en/gis-level2/#django--geodjango-web-development-with-spatial-support
-          - title: "QGis"
-            url: /en/gis-level2/#qgis--pyqgis-plugin-development-for-gis
+      
     fr:
       - title: "Bien débuter"
         children:      
@@ -90,20 +83,10 @@ quick-links:
             url: /fr/quick-start/#mettre-en-place-son-environnement
           - title: "Autres manières de développer : Jupyter Notebook"
             url: /fr/quick-start/#autres-mani%C3%A8res-de-d%C3%A9velopper--jupyter-notebook
+          - title: "GitHub Codespaces"
+            url: /fr/codespaces-intro/
           - title: "Vidéos utiles"
             url: /fr/quick-start/#vid%C3%A9os-utiles
-      - title: Notions de base en JavaScript
-        children:
-          - title: "Règles de base"
-            url: /fr/js-basics/#r%C3%A8gles-de-base
-          - title: "Les variables"
-            url: /fr/js-basics/#les-variables
-          - title: "Les boucles"
-            url: /fr/js-basics/#les-boucles
-          - title: "Les conditions"
-            url: /fr/js-basics/#les-conditions
-          - title: "Les fonctions"
-            url: /fr/js-basics/#les-fonctions
       - title: Notions de base en Python
         children:
           - title: "Règles de base"
@@ -120,6 +103,8 @@ quick-links:
             url: /fr/python-basics/#les-conditions
           - title: "Les fonctions"
             url: /fr/python-basics/#les-fonctions
+          - title: "Les classes"
+            url: /fr/python-classes-intro/
       - title: Premières notions en GéoInfo
         children:
           - title: "Installer vos librairies"
@@ -132,16 +117,7 @@ quick-links:
             url: /fr/gis-level1/#%C3%A9changes-avec-une-bd
           - title: "Vidéos utiles"
             url: /fr/gis-level1/#vid%C3%A9os-utiles
-      - title: Notions avancées en GéoInfo
-        children:
-          - title: "Shapely"
-            url: /fr/gis-level2/#shapely
-          - title: "Rtree (index spatial)"
-            url: /fr/gis-level2/#rtree-index-spatial
-          - title: "Django"
-            url: /fr/gis-level2/#django
-          - title: "QGis"
-            url: /fr/gis-level2/#qgis
+      
   database:
     en:
       - title: "PostgreSQL"
@@ -157,6 +133,31 @@ quick-links:
             url: /fr/postgresql-postgis-basics/#introduction-à-postgresql-et-postgis
           - title: "Création et gestion des bases de données"
             url: /fr/postgresql-postgis-basics/#création-et-gestion-des-bases-de-données
+          - title: "Requêtes SQL de base"
+            url: /fr/postgresql-postgis-basics/#requêtes-sql-de-base
+          - title: "Requêtes spatiales avec PostGIS"
+            url: /fr/postgresql-postgis-basics/#requêtes-spatiales-avec-postgis
+          - title: "Indexation pour les performances"
+            url: /fr/postgresql-postgis-basics/#indexation-pour-les-performances
+          - title: "Bonnes pratiques"
+            url: /fr/postgresql-postgis-basics/#bonnes-pratiques
+      - title: "Notions de bases de données NoSQL"
+        children: 
+          - title: "Introduction aux bases de données NoSQL"
+            url: /fr/nosql-basics/#introduction-aux-bases-de-données-nosql
+          - title: "Présentation de Redis, MongoDB et Neo4j"
+            url: /fr/nosql-basics/#présentation-de-redis-mongodb-et-neo4j
+          - title: "Configuration et gestion des bases de données"
+            url: /fr/nosql-basics/#configuration-et-gestion-des-bases-de-données
+          - title: "Création et insertion de données"
+            url: /fr/nosql-basics/#création-et-insertion-de-données
+          - title: "Requêtes de base et spatiales"
+            url: /fr/nosql-basics/#requêtes-de-base-et-spatiales
+          - title: "Optimisation des performances"
+            url: /fr/nosql-basics/#optimisation-des-performances
+          - title: "Bonnes pratiques"
+            url: /fr/nosql-basics/#bonnes-pratiques
+        
   gisserver:
     en:
       - title: "GIS Server"
@@ -168,14 +169,23 @@ quick-links:
           - title: "PostGIS"
             url: /en/postgis-basics/#postgis-basics
     fr:
-      - title: "Serveur GIS"
+      - title: "Docker"
         children:
-          - title: "Docker"
-            url: /fr/gis-docker/#docker
-          - title: "PostgreSQL"
-            url: /fr/postgresql-postgis-basics/#postgresql
-          - title: "PostGIS"
-            url: /fr/postgresql-postgis-basics/#postgis
+          - title: "Introduction à Docker"
+            url: /fr/gis-docker/#introduction-à-docker
+          - title: "Les concepts clés"
+            url: /fr/gis-docker/#les-concepts-clés
+          - title: "Installer Docker"
+            url: /fr/gis-docker/#installer-docker
+      - title: "Web API"
+        children:
+          - title: "Bases de Flask et FastAPI"
+            url: /fr/web-python-api/
+      - title: "Serveur cartographique"
+        children:
+          - title: "Notions sur GeoServer et Mapserver"
+            url: /fr/gisserver/
+          
   client:
     en:
       - title: "GIS Client"
@@ -185,9 +195,15 @@ quick-links:
           - title: "HTML/CSS Basics"
             url: /en/html-css-basics/#html-css-basics
     fr:
-      - title: "Client GIS"
+      - title: Notions de base en JavaScript
         children:
-          - title: "Notions de base en JavaScript"
-            url: /fr/js-basics/#notions-de-base-en-javascript
-          - title: "Notions de base en HTML/CSS"
-            url: /fr/html-css-basics/#notions-de-base-en-htmlcss
+          - title: "Règles de base"
+            url: /fr/js-basics/#r%C3%A8gles-de-base
+          - title: "Les variables"
+            url: /fr/js-basics/#les-variables
+          - title: "Les boucles"
+            url: /fr/js-basics/#les-boucles
+          - title: "Les conditions"
+            url: /fr/js-basics/#les-conditions
+          - title: "Les fonctions"
+            url: /fr/js-basics/#les-fonctions

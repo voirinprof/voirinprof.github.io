@@ -192,4 +192,4 @@ SELECT nom, ST_IsValid(geom) AS est_valide
 FROM points_interet;
 ```
 
-Vidéo utile : [Bonnes pratiques avec PostgreSQL et PostGIS](https://youtu.be/5p3y2G5z5eY)
+Vidéo utile : [PostgreSQL Install with PostGIS Spatial Extension - Connecting to PostgreSQL on QGIS](https://www.youtube.com/watch?v=ZaFJQg29ZQ4)

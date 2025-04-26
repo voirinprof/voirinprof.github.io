@@ -4,10 +4,15 @@ fr:
   author:
     name: "Collectif de développeurs"
     bio: "Le site rassemble des ressources pour le géomaticien. Il est réalisé par des développeurs bénévoles et membres du Département de Géomatique Appliquée de l'Université de Sherbrooke."
-    
+  search:
+    term: "Entrez votre terme de recherche"
+    results_found: "Résultat(s) trouvé(s)"
 en:
   title: "Coding in Python for Geomatics"
   description: "A site with resources for the geomatics professional."
   author:
     name: "Collective of developers"
     bio: "The site brings together resources for the geomatics professional. It is created by volunteer developers and members of the Department of Applied Geomatics at the University of Sherbrooke."
+  search:
+    term: "Enter your search term"
+    results_found: "Result(s) found"

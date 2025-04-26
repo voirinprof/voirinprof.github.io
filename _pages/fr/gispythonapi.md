@@ -5,6 +5,7 @@ lang: fr
 date: 2025-04-25T14:30:00+00:00
 toc: true
 toc_label: "Sur cette page"
+typenav: gisserver
 ---
 
 ## Introduction

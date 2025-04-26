@@ -12,7 +12,7 @@ var idx = lunr(function () {
   this.pipeline.remove(lunr.trimmer)
 
   for (var item in store) {
-    if (store[item].url && store[item].url.includes('/en/')) {
+    if (store[item].url && store[item].url.includes('/fr/')) {
       this.add({
         title: store[item].title,
         excerpt: store[item].excerpt,
@@ -41,7 +41,7 @@ $(document).ready(function() {
         })
       });
     resultdiv.empty();
-    resultdiv.prepend('<p class="results__found">'+result.length+' {{ site.data.ui-text[site.locale].results_found | default: "Result(s) found" }}</p>');
+    resultdiv.prepend('<p class="results__found">'+result.length+' {{ site.data.ui-text["fr"].results_found | default: "Result(s) found" }}</p>');
     for (var item in result) {
       var ref = result[item].ref;
       if(store[ref].teaser){
