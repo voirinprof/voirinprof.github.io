@@ -21,31 +21,89 @@ La figure ci-dessous illustre ce que devrait connaître un développeur en Géom
     Base de données
     :::secondblock
       SQL
+      :::thirdblock
         PostGIS
       NoSQL
+      :::thirdblock
         Redis
         MongoDB
-        Neo4J
+        Neo4j
     Serveur
     :::secondblock
       Docker
-        
+      :::thirdblock
       WebAPI
+      :::thirdblock
         Flask
         FastAPI
         Django
       Cartographique
+      :::thirdblock
     Client
     :::secondblock
       JS, CSS, HTML
+      :::thirdblock
       Frameworks
+      :::thirdblock
         Vue
     Divers
     :::secondblock
       IA
+      :::thirdblock
       QGis
+      :::thirdblock
       Tests
+      :::thirdblock
     </pre>
     
 
 Nous espérons que vous apprécierez notre site et que vous le trouverez utile dans vos projets de géomatique en Python. N'hésitez pas à nous contacter si vous avez des commentaires ou des suggestions pour améliorer notre site.
+
+<style>
+
+pre.mermaid {
+  
+  border: 2px dashed #eaeaea;   /* bordure */
+  padding: 20px;             /* espace interne */
+  border-radius: 10px;       /* coins arrondis */
+  overflow: auto;            /* scroll si besoin */
+  /* font-family: "consolas" */
+}
+
+pre.mermaid .firstblock  {
+  fill: #eaeaea; /* vert doux */
+  
+  stroke-width: 2px;
+  /* font-weight: bold;
+  font-size: 14px; */
+  
+}
+
+pre.mermaid .firstblock .node-bkg {
+  fill: #252a34!important;
+  stroke: #eaeaea!important;
+}
+
+pre.mermaid .secondblock .node-bkg {
+  fill:rgb(70, 80, 99)!important;
+  
+}
+
+pre.mermaid .secondblock text {
+  fill: #eaeaea!important;
+}
+
+pre.mermaid .thirdblock .node-bkg {
+  fill:rgb(109, 125, 155)!important;
+  
+}
+
+pre.mermaid .thirdblock text {
+  fill: #eaeaea!important;
+}
+
+pre.mermaid .mindmap-edges .edge {
+  stroke:rgb(248, 246, 246)!important;
+}
+</style>
+

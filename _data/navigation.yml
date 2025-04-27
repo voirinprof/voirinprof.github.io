@@ -127,36 +127,33 @@ quick-links:
           - title: "PostGIS Basics"
             url: /en/postgis-basics/#postgis-basics
     fr:
-      - title: "Notions de base en PostgreSQL/PostGIS"
+      - title: "Notions de base SQL/NoSQL"
         children:
           - title: "Introduction à PostgreSQL et PostGIS"
-            url: /fr/postgresql-postgis-basics/#introduction-à-postgresql-et-postgis
-          - title: "Création et gestion des bases de données"
-            url: /fr/postgresql-postgis-basics/#création-et-gestion-des-bases-de-données
-          - title: "Requêtes SQL de base"
-            url: /fr/postgresql-postgis-basics/#requêtes-sql-de-base
-          - title: "Requêtes spatiales avec PostGIS"
-            url: /fr/postgresql-postgis-basics/#requêtes-spatiales-avec-postgis
-          - title: "Indexation pour les performances"
-            url: /fr/postgresql-postgis-basics/#indexation-pour-les-performances
-          - title: "Bonnes pratiques"
-            url: /fr/postgresql-postgis-basics/#bonnes-pratiques
-      - title: "Notions de bases de données NoSQL"
-        children: 
+            url: /fr/postgresql-postgis-basics/           
           - title: "Introduction aux bases de données NoSQL"
-            url: /fr/nosql-basics/#introduction-aux-bases-de-données-nosql
-          - title: "Présentation de Redis, MongoDB et Neo4j"
-            url: /fr/nosql-basics/#présentation-de-redis-mongodb-et-neo4j
-          - title: "Configuration et gestion des bases de données"
-            url: /fr/nosql-basics/#configuration-et-gestion-des-bases-de-données
-          - title: "Création et insertion de données"
-            url: /fr/nosql-basics/#création-et-insertion-de-données
-          - title: "Requêtes de base et spatiales"
-            url: /fr/nosql-basics/#requêtes-de-base-et-spatiales
-          - title: "Optimisation des performances"
-            url: /fr/nosql-basics/#optimisation-des-performances
-          - title: "Bonnes pratiques"
-            url: /fr/nosql-basics/#bonnes-pratiques
+            url: /fr/nosql-basics/
+      - title: "Python et bases de données"
+        children:
+          - title: "Python avec PostgreSQL/PostGIS"
+            url: /fr/python-postgresql-postgis/
+          - title: "Python avec Redis"
+            url: /fr/python-postgresql-postgis/
+          - title: "Python avec MongoDB"
+            url: /fr/python-postgresql-postgis/
+          - title: "Python avec Neo4j"
+            url: /fr/python-postgresql-postgis/
+      - title: "Applications"
+        children:
+          - title: "Python avec PostgreSQL/PostGIS"
+            url: /fr/python-postgresql-postgis/
+          - title: "Python avec Redis"
+            url: /fr/python-postgresql-postgis/
+          - title: "Python avec MongoDB"
+            url: /fr/python-postgresql-postgis/
+          - title: "Python avec Neo4j"
+            url: /fr/python-postgresql-postgis/
+          
         
   gisserver:
     en:
