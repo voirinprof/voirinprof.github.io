@@ -57,7 +57,7 @@ La figure ci-dessous illustre ce que devrait connaître un développeur en Géom
     </pre>
     
 
-Nous espérons que vous apprécierez notre site et que vous le trouverez utile dans vos projets de géomatique en Python. N'hésitez pas à nous contacter si vous avez des commentaires ou des suggestions pour améliorer notre site.
+J'espère que vous apprécierez le site et que vous le trouverez utile dans vos projets de géomatique en Python. N'hésitez pas à me contacter si vous avez des commentaires ou des suggestions pour améliorer le contenu du site.
 
 <style>
 

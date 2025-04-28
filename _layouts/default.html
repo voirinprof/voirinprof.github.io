@@ -48,6 +48,48 @@
     </div>
 
     {% include scripts.html %}
+    <style>
+      #back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+  background-color: #adaeaf;
+  color: white;
+  border: 1px solid #e8eaeb;
+  border-radius: 30%;
+  padding: 3px 16px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: none; /* caché par défaut */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
 
+#back-to-top:hover {
+  background-color: #00adb5;
+}
+
+    </style>
+    <button id="back-to-top" title="Retour en haut">↑</button>
+    <script>
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        const button = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      }
+      
+      document.getElementById("back-to-top").addEventListener("click", function(){
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      });
+      </script>
+      
   </body>
 </html>

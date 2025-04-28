@@ -5,7 +5,11 @@
 {% else %}
   {% assign lang = "en" %}
 {% endcase %}
-{% assign lang = page.lang %}
+<!-- if page.lang -->
+{% if page.lang %}
+  {% assign lang = page.lang %}
+{% endif %}
+
 <script src="{{ '/assets/js/lunr/lunr.min.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/lunr/lunr-store.js' | relative_url }}"></script>
 <script src="{{ '/assets/js/lunr/lunr-' | append: lang | append: '.js' | relative_url }}"></script>

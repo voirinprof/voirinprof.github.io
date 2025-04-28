@@ -105,18 +105,13 @@ quick-links:
             url: /fr/python-basics/#les-fonctions
           - title: "Les classes"
             url: /fr/python-classes-intro/
-      - title: Premières notions en GéoInfo
+      - title: Notions en GéoInfo
         children:
-          - title: "Installer vos librairies"
-            url: /fr/gis-level1/#installer-vos-librairies
-          - title: "Lire des données spatiales"
-            url: /fr/gis-level1/#lire-des-donn%C3%A9es-spatiales
-          - title: "Écrire des données spatiales"
-            url: /fr/gis-level1/#%C3%A9crire-des-donn%C3%A9es-spatiales
-          - title: "Échanges avec une BD"
-            url: /fr/gis-level1/#%C3%A9changes-avec-une-bd
-          - title: "Vidéos utiles"
-            url: /fr/gis-level1/#vid%C3%A9os-utiles
+          - title: "Premières notions en GéoInfo"
+            url: /fr/gis-level1/
+          - title: "Notions avancées en GéoInfo"
+            url: /fr/gis-level2/
+          
       
   database:
     en:
@@ -136,23 +131,20 @@ quick-links:
       - title: "Python et bases de données"
         children:
           - title: "Python avec PostgreSQL/PostGIS"
-            url: /fr/python-postgresql-postgis/
+            url: /fr/python-postgis/
           - title: "Python avec Redis"
-            url: /fr/python-postgresql-postgis/
+            url: /fr/python-redis/
           - title: "Python avec MongoDB"
-            url: /fr/python-postgresql-postgis/
+            url: /fr/python-mongodb/
           - title: "Python avec Neo4j"
-            url: /fr/python-postgresql-postgis/
+            url: /fr/python-neo4j/
       - title: "Applications"
         children:
-          - title: "Python avec PostgreSQL/PostGIS"
-            url: /fr/python-postgresql-postgis/
-          - title: "Python avec Redis"
-            url: /fr/python-postgresql-postgis/
-          - title: "Python avec MongoDB"
-            url: /fr/python-postgresql-postgis/
-          - title: "Python avec Neo4j"
-            url: /fr/python-postgresql-postgis/
+          - title: "Itinéraire avec pgRouting"
+            url: /fr/python-routing/
+          - title: "Routing avec Redis et Neo4j"
+            url: /fr/routing-redis-neo4j/
+          
           
         
   gisserver:

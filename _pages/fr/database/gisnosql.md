@@ -4,6 +4,7 @@ permalink: /fr/nosql-basics/
 lang: fr
 date: 2025-04-26T10:00:00+00:00
 toc: true
+toc_sticky: true
 toc_label: "Dans cette page"
 typenav: database
 ---
@@ -30,7 +31,6 @@ Cette approche garantit une utilisation efficace des bases NoSQL, en évitant le
 
 ## Configuration et gestion des bases de données
 
-### Redis
 Redis est léger et rapide. Pour démarrer, installez Redis localement ou utilisez un service cloud comme Redis Labs.
 
 Commande pour démarrer un serveur Redis local (après installation) :
@@ -45,7 +45,6 @@ redis-cli
 
 > Conseil : Vérifiez que Redis est installé (`redis-server --version`) avant de lancer le serveur.
 
-### MongoDB
 MongoDB peut être installé localement ou utilisé via MongoDB Atlas (cloud). Pour une installation locale, téléchargez MongoDB Community Server.
 
 Démarrer le serveur MongoDB :
@@ -65,7 +64,6 @@ use ma_base_de_donnees
 
 > Conseil : MongoDB crée automatiquement la base lors de la première insertion si elle n’existe pas.
 
-### Neo4j
 Neo4j propose une version desktop (Neo4j Desktop) ou serveur. Téléchargez Neo4j Community Edition pour commencer.
 
 Démarrer Neo4j (après installation) :
@@ -137,7 +135,7 @@ Vidéo utile : [Premiers pas avec MongoDB](https://youtu.be/EE8ZTQxa0AM)
 ## Requêtes de base et spatiales
 
 ### Redis
-#### Requêtes de base
+
 Récupérer une clé :
 ```bash
 GET utilisateur:123
@@ -153,7 +151,6 @@ Supprimer une clé :
 DEL utilisateur:123
 ```
 
-#### Requêtes spatiales
 Trouver des lieux dans un rayon de 100 km autour de la Tour Eiffel :
 ```bash
 GEORADIUS lieux 2.2945 48.8584 100 km
@@ -167,7 +164,7 @@ GEODIST lieux "Tour Eiffel" "Lyon" km
 > Conseil : Les commandes `GEORADIUS` et `GEORADIUSBYMEMBER` sont rapides mais limitées aux calculs sphériques simples.
 
 ### MongoDB
-#### Requêtes de base
+
 Sélectionner tous les documents d’une collection :
 ```javascript
 db.points_interet.find().pretty()
@@ -191,7 +188,6 @@ Supprimer un document :
 db.points_interet.deleteOne({ nom: "Tour Eiffel" })
 ```
 
-#### Requêtes spatiales
 Créer un index géospatial :
 ```javascript
 db.points_interet.createIndex({ location: "2dsphere" })
@@ -228,7 +224,7 @@ db.points_interet.find({
 > Conseil : Utilisez `$near` pour les recherches de proximité et `$geoWithin` pour les intersections.
 
 ### Neo4j
-#### Requêtes de base
+
 Trouver tous les nœuds avec l’étiquette `PointInteret` :
 ```cypher
 MATCH (p:PointInteret)
@@ -247,7 +243,6 @@ MATCH (p:PointInteret {nom: "Tour Eiffel"})
 DETACH DELETE p
 ```
 
-#### Requêtes spatiales
 Trouver les lieux dans un rayon de 100 km autour de la Tour Eiffel :
 ```cypher
 WITH point({longitude: 2.2945, latitude: 48.8584, srid: 4326}) AS centre

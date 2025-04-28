@@ -4,6 +4,7 @@ permalink: /fr/python-classes-intro/
 lang: fr
 date: 2025-04-26T10:00:00+00:00
 toc: true
+toc_sticky: true
 toc_label: "Dans cette page"
 typenav: start
 ---
