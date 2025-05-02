@@ -9,7 +9,7 @@ toc_label: "Dans cette page"
 typenav: database
 ---
 
-> **_NOTE:_** La [documentation officielle de Redis](https://redis.io/docs/latest/) et celle de la bibliothèque Python [redis-py](https://redis-py.readthedocs.io/) fournissent des instructions détaillées pour aller plus loin.
+> **_NOTE:_** La [documentation officielle de Redis](https://redis.io/docs/latest/) et celle de la bibliothèque Python [redis-py](https://redis-py.readthedocs.io/) fournissent des instructions détaillées pour aller plus loin. Vous avez la possibilité d'utiliser ce GitHub Codespaces pour pratiquer avec Redis [https://github.com/voirinprof/gis_starter_redis_geolab](https://github.com/voirinprof/gis_starter_redis_geolab). Pour mettre en place un environnement Codespaces allez voir [Premiers pas avec GitHub Codespaces](/fr/codespaces-intro/).
 
 ## Introduction à Redis
 
@@ -167,4 +167,3 @@ Cette approche est très pratique pour mettre en place un outil de recherche de 
 
 - [Documentation Redis](https://redis.io/docs/latest/)
 - [Documentation redis-py](https://redis-py.readthedocs.io/)
-- [Article : Usage de Redis pour le stockage spatial temps réel](https://redis.com/blog/location-tracking-and-geo-spatial-data-with-redis/)

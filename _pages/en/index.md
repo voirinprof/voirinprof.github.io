@@ -7,25 +7,52 @@ author_profile: true
 sidebar: false
 full: true
 ---
-# Welcome to this site dedicated to geomatics in Python!
 
-If you are a Python developer interested in geomatics, this site is for you. A variety of resources and tools are available to help you better understand and apply geomatics concepts in your Python work.
+# Welcome to this site dedicated to Geomatics with Python!
 
-The site includes tutorials and code examples for manipulating geospatial data, visualizing maps, analyzing geospatial data, and much more. You can also find links to popular Python libraries for geomatics such as Geopandas, Shapely, and Fiona.
+If you're a Python developer interested in geomatics, this site is for you. A variety of resources and tools are available to help you better understand and apply geomatics concepts in your Python work.
 
-The figure below illustrates what a developer in Geomatics should know. The website will provide you with the fundamentals to approach all these topics.
+The site includes tutorials and Python code examples for handling geospatial data, visualizing maps, performing geospatial analysis, and much more. You will also find links to popular Python libraries for geomatics such as Geopandas, Shapely, and Fiona.
+
+This site aims to introduce concepts across various aspects of programming that a geomatics developer should master, including:
+
+- **Setting up a complete development environment**  
+  (Visual Studio Code, Git, Docker, installation, ...)
+
+- **Designing, administering, and querying relational databases**  
+  (SQL modeling, query optimization, spatial integration, ...)
+
+- **Exploring alternatives to traditional databases**  
+  (implementing NoSQL databases suited for geospatial needs: MongoDB, Redis, Neo4j, ...)
+
+- **Deploying and administering a map server**  
+  (QGIS Server, GeoServer, MapServer, managing OGC services: WMS, WFS, WCS, WPS, ...)
+
+- **Setting up custom geospatial web services**  
+  (REST APIs, geocoding, routing, spatial analysis services, ...)
+
+- **Developing traditional web clients**  
+  (HTML5, JavaScript, CSS3, integrating mapping libraries like Leaflet, OpenLayers)
+
+- **Using modern frameworks to develop rich interfaces**  
+  (VUE.js, React, building interactive and high-performance applications)
+
+- **Extending QGIS functionalities**  
+  (Python plugin development, custom processing, integration into existing workflows)
+
+The diagram below illustrates what a geomatics developer should ideally know. This site will give you a solid foundation to explore each of these areas.
 
 <pre class="mermaid">
       mindmap
   root((Developer))
     :::firstblock
-    Database
+    Databases
     :::secondblock
       SQL
-        :::thirdblock
+      :::thirdblock
         PostGIS
       NoSQL
-        :::thirdblock
+      :::thirdblock
         Redis
         MongoDB
         Neo4j
@@ -38,10 +65,12 @@ The figure below illustrates what a developer in Geomatics should know. The webs
         Flask
         FastAPI
         Django
-      Cartographic
+      Mapping
       :::thirdblock
     Client
     :::secondblock
+      QGIS
+      :::thirdblock
       JS, CSS, HTML
       :::thirdblock
       Frameworks
@@ -50,29 +79,26 @@ The figure below illustrates what a developer in Geomatics should know. The webs
     Miscellaneous
     :::secondblock
       AI
-      :::thirdblock
-      QGis
-      :::thirdblock
-      Tests
+      :::thirdblock      
+      Testing
       :::thirdblock
 </pre>
 
-We hope you enjoy our site and find it useful in your geomatics projects in Python. Please feel free to contact us if you have any comments or suggestions for improving our site.
-
+I hope you enjoy the site and find it helpful for your Python geomatics projects. Feel free to contact me if you have any feedback or suggestions to improve the site’s content.
 
 <style>
 
 pre.mermaid {
   
-  border: 2px dashed #eaeaea;   /* bordure */
-  padding: 20px;             /* espace interne */
-  border-radius: 10px;       /* coins arrondis */
-  overflow: auto;            /* scroll si besoin */
+  border: 2px dashed #eaeaea;   /* border */
+  padding: 20px;                /* inner spacing */
+  border-radius: 10px;          /* rounded corners */
+  overflow: auto;               /* scroll if needed */
   /* font-family: "consolas" */
 }
 
 pre.mermaid .firstblock  {
-  fill: #eaeaea; /* vert doux */
+  fill: #eaeaea; /* soft gray */
   
   stroke-width: 2px;
   /* font-weight: bold;

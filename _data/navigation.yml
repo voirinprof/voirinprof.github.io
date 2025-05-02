@@ -21,112 +21,77 @@ main:
     - title: "Client"
       url: /fr/js-basics/
     - title: "Divers"
-      url: /fr/gis-docker/
+      url: /fr/python-useful/
 quick-links:
   start:
     en:
-      - title: "Getting Started"
+      - title: "Start here"
         children:      
           - title: "The development environment"
-            url: /en/quick-start/#your-development-environment
+            url: /en/quick-start/
           - title: "Activate Copilot"
-            url: /en/vscode-ai/
-          - title: "The tools to know"
-            url: /en/quick-start/#tools-to-know
-          - title: "Set up your environment"
-            url: /en/quick-start/#setting-up-your-environment
-          - title: "Other ways to develop: Jupyter Notebook"
-            url: /en/quick-start/#other-ways-to-work-jupyter-notebooks
-          - title: "Getting Started with GitHub Codespaces"
+            url: /en/vscode-ai/     
+          - title: "GitHub Codespaces"
             url: /en/codespaces-intro/
-          - title: "Useful videos"
-            url: /en/quick-start/#useful-videos
-      - title: "Basic Python Concepts"
+      - title: "Basics"
         children:
-          - title: "Basic rules"
-            url: /en/python-basics/#basic-rules
-          - title: "Variables"
-            url: /en/python-basics/#variables
-          - title: "Operators"
-            url: /en/python-basics/#operators
-          - title: "Lists"
-            url: /en/python-basics/#lists
-          - title: "Loops"
-            url: /en/python-basics/#loops
-          - title: "Conditions"
-            url: /en/python-basics/#conditions
-          - title: "Functions"
-            url: /en/python-basics/#functions
-      - title: "First Concepts in Geoinfo"
-        children:
-          - title: "Install your libraries"
-            url: /en/gis-level1/#installing-your-libraries
-          - title: "Read spatial data"
-            url: /en/gis-level1/#reading-spatial-data
-          - title: "Write spatial data"
-            url: /en/gis-level1/#writing-spatial-data
-          - title: "Exchanges with a database"
-            url: /en/gis-level1/#database-interactions
-          - title: "Useful videos"
-            url: /en/gis-level1/#useful-videos
-      
+          - title: "The basics in Python"
+            url: /en/python-basics/
+          - title: "Classes"
+            url: /en/python-classes-intro/
+          - title: "First concepts in GeoInfo"
+            url: /en/gis-level1/
+          - title: "Advanced concepts in GeoInfo"
+            url: /en/gis-level2/      
     fr:
       - title: "Bien débuter"
         children:      
           - title: "L’environnement de développement"
-            url: /fr/quick-start/#lenvironnement-de-d%C3%A9veloppement
+            url: /fr/quick-start/
           - title: "Activer Copilot"
             url: /fr/vscode-ai/     
-          - title: "Les outils à connaître"
-            url: /fr/quick-start/#les-outils-%C3%A0-conna%C3%AEtre
-          - title: "Mettre en place son environnement"
-            url: /fr/quick-start/#mettre-en-place-son-environnement
-          - title: "Autres manières de développer : Jupyter Notebook"
-            url: /fr/quick-start/#autres-mani%C3%A8res-de-d%C3%A9velopper--jupyter-notebook
           - title: "GitHub Codespaces"
             url: /fr/codespaces-intro/
-          - title: "Vidéos utiles"
-            url: /fr/quick-start/#vid%C3%A9os-utiles
-      - title: Notions de base en Python
+      - title: Notions de base
         children:
-          - title: "Règles de base"
-            url: /fr/python-basics/#r%C3%A8gles-de-base
-          - title: "Les variables"
-            url: /fr/python-basics/#les-variables
-          - title: "Les opérateurs"
-            url: /fr/python-basics/#les-op%C3%A9rateurs
-          - title: "Les listes"
-            url: /fr/python-basics/#les-listes
-          - title: "Les boucles"
-            url: /fr/python-basics/#les-boucles
-          - title: "Les conditions"
-            url: /fr/python-basics/#les-conditions
-          - title: "Les fonctions"
-            url: /fr/python-basics/#les-fonctions
+          - title: "Les bases en Python"
+            url: /fr/python-basics/
           - title: "Les classes"
             url: /fr/python-classes-intro/
-      - title: Notions en GéoInfo
-        children:
           - title: "Premières notions en GéoInfo"
             url: /fr/gis-level1/
           - title: "Notions avancées en GéoInfo"
             url: /fr/gis-level2/
-          
-      
   database:
     en:
-      - title: "PostgreSQL"
+      - title: "SQL/NoSQL Basics"
         children:
-          - title: "PostgreSQL Basics"
-            url: /en/postgresql-basics/#postgresql-basics
-          - title: "PostGIS Basics"
-            url: /en/postgis-basics/#postgis-basics
+          - title: "PostgreSQL and PostGIS"
+            url: /en/postgresql-postgis-basics/           
+          - title: "NoSQL Databases"
+            url: /en/nosql-basics/
+      - title: "Python and Databases"
+        children:
+          - title: "Python with PostgreSQL/PostGIS"
+            url: /en/python-postgis/
+          - title: "Python with Redis"
+            url: /en/python-redis/
+          - title: "Python with MongoDB"
+            url: /en/python-mongodb/
+          - title: "Python with Neo4j"
+            url: /en/python-neo4j/
+      - title: "Applications"
+        children:
+          - title: "Routing with pgRouting"
+            url: /en/python-routing/
+          - title: "Routing with Redis and Neo4j"
+            url: /en/routing-redis-neo4j/
     fr:
       - title: "Notions de base SQL/NoSQL"
         children:
-          - title: "Introduction à PostgreSQL et PostGIS"
+          - title: "PostgreSQL et PostGIS"
             url: /fr/postgresql-postgis-basics/           
-          - title: "Introduction aux bases de données NoSQL"
+          - title: "Bases de données NoSQL"
             url: /fr/nosql-basics/
       - title: "Python et bases de données"
         children:
@@ -143,29 +108,34 @@ quick-links:
           - title: "Itinéraire avec pgRouting"
             url: /fr/python-routing/
           - title: "Routing avec Redis et Neo4j"
-            url: /fr/routing-redis-neo4j/
-          
-          
-        
+            url: /fr/routing-redis-neo4j/  
   gisserver:
     en:
-      - title: "GIS Server"
+      - title: "Docker"
         children:
-          - title: "Docker"
-            url: /en/gis-docker/#docker
-          - title: "PostgreSQL"
-            url: /en/postgresql-basics/#postgresql-basics
-          - title: "PostGIS"
-            url: /en/postgis-basics/#postgis-basics
+          - title: "Introduction to Docker"
+            url: /en/gis-docker/
+          - title: "Examples of Docker"
+            url: /en/python-useful/
+      - title: "Web API"
+        children:
+          - title: "Basics of Flask and FastAPI"
+            url: /en/web-python-api/
+      - title: "Map Server"
+        children:
+          - title: "Basics of GeoServer and Mapserver"
+            url: /en/gisserver/
+          - title: "Basics of Mapnik"
+            url: /en/mapnik-intro/
+          - title: "QGIS Server and Python"
+            url: /en/qgis-server-intro/
     fr:
       - title: "Docker"
         children:
           - title: "Introduction à Docker"
-            url: /fr/gis-docker/#introduction-à-docker
-          - title: "Les concepts clés"
-            url: /fr/gis-docker/#les-concepts-clés
-          - title: "Installer Docker"
-            url: /fr/gis-docker/#installer-docker
+            url: /fr/gis-docker/
+          - title: "Des exemples de Docker"
+            url: /fr/python-useful/
       - title: "Web API"
         children:
           - title: "Bases de Flask et FastAPI"
@@ -174,25 +144,54 @@ quick-links:
         children:
           - title: "Notions sur GeoServer et Mapserver"
             url: /fr/gisserver/
-          
+          - title: "Notions de Mapnik"
+            url: /fr/mapnik-intro/
+          - title: "QGIS Server et Python"
+            url: /fr/qgis-server-intro/
   client:
     en:
-      - title: "GIS Client"
+      - title: "Basics"
         children:
-          - title: "JavaScript Basics"
-            url: /en/js-basics/#javascript-basics
-          - title: "HTML/CSS Basics"
-            url: /en/html-css-basics/#html-css-basics
+          - title: "JavaScript"
+            url: /en/js-basics/          
+          - title: "Vue.js 3"
+            url: /en/vuejs-intro/
+      - title: Applications
+        children:
+          - title: "QGis and Python"
+            url: /en/qgispython/          
+          - title: "WebGIS Applications"
+            url: /en/webgis/
     fr:
-      - title: Notions de base en JavaScript
+      - title: Notions de base
         children:
-          - title: "Règles de base"
-            url: /fr/js-basics/#r%C3%A8gles-de-base
-          - title: "Les variables"
-            url: /fr/js-basics/#les-variables
-          - title: "Les boucles"
-            url: /fr/js-basics/#les-boucles
-          - title: "Les conditions"
-            url: /fr/js-basics/#les-conditions
-          - title: "Les fonctions"
-            url: /fr/js-basics/#les-fonctions
+          - title: "JavaScript"
+            url: /fr/js-basics/          
+          - title: "Vue.js 3"
+            url: /fr/vuejs-intro/
+      - title: Applications
+        children:
+          - title: "QGis et Python"
+            url: /fr/qgispython/          
+          - title: "Applications WebGIS"
+            url: /fr/webgis/
+  misc:
+    en:
+      - title: "Miscellaneous"
+        children:
+          - title: "Git Basics"
+            url: /en/git-basics/
+          - title: "Markdown Basics"
+            url: /en/markdown-basics/
+          - title: "Jupyter Notebook Basics"
+            url: /en/jupyter-basics/
+          - title: "Python Libraries"
+            url: /en/python-libraries/
+    fr:
+      - title: Divers
+        children:
+          - title: "Répertoire des codes utiles"
+            url: /fr/python-useful/
+          - title: "Approches pour les tests"
+            url: /fr/testing-useful/
+          

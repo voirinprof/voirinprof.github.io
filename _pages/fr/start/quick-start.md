@@ -8,6 +8,7 @@ toc_sticky: true
 toc_label: "Dans cette page"
 typenav: start
 ---
+> **_NOTE:_**  Le site [gis_starter_geolab sur GitHub](https://github.com/voirinprof/gis_starter_geolab) est un bon environnement pour débuter la programmation en géomatique. Utilisez le repo et exécutez **Codespaces**, vous avez droit à 120 h / mois gratuitement (attention au choix du processeur qui va affecter votre crédit horaire). C'est toutefois la manière la plus simple pour avoir un environnement VS Code Web gratuit en ligne.
 
 ## L'environnement de développement
 
@@ -17,7 +18,7 @@ Lorsqu'on travaille en géomatique avec Python, il est important d'avoir un envi
 
 Ensuite, il est conseillé d'utiliser un environnement de développement intégré (IDE) tel que PyCharm, Visual Studio Code ou Spyder. Ces IDE offrent des fonctionnalités avancées telles que la complétion automatique de code, la détection d'erreurs de syntaxe et la mise en évidence des variables non utilisées.
 
-> Conseil : Visual Studio Code semble être plus léger et il s'intègre bien avec Conda.
+> Conseil : Visual Studio Code semble être plus léger et il s'intègre bien avec Conda. De plus `GitHub Codespaces` propose le même environnement web.
 
 Il est également recommandé d'installer des bibliothèques Python pour la géomatique telles que Geopandas, Shapely et Fiona. Ces bibliothèques permettent la manipulation de données géospatiales en Python et offrent des fonctionnalités avancées pour la visualisation et l'analyse de ces données.
 
@@ -29,7 +30,7 @@ Pour l'environnement Python, le mieux est de prendre Conda. Cet environnement vo
 
 > Conseil : prenez l'habitude des commandes en ligne pour gérer votre environnement de développement. Ceci vous aidera si vous avez à reproduire les commandes sur un serveur Linux. En général, on effectue toutes les commandes dans un terminal.
 
-Pour votre IDE, Visual Studio Code devrait répondre à la majorité de vos besoins. Cet outil dispose de belles extensions pour Python qui vous permettra d'aller très vite dans le développement. De plus, si vous êtes un étudiant, vous pouvez bénéficier de l'assistant Co-pilot de Github directement dans VSCode.
+Pour votre IDE, Visual Studio Code devrait répondre à la majorité de vos besoins. Cet outil dispose de belles extensions pour Python qui vous permettra d'aller très vite dans le développement. De plus, si vous êtes un étudiant, vous pouvez bénéficier de l'assistant Co-pilot de Github directement dans VS Code.
 
 > Conseil : utilisez un environnement dans lequel vous êtes à l'aise. Bien que de nombreuses vidéos montrent l'environnement VS Code, vous pouvez reproduire les mêmes démarches dans PyCharm ou Spyder. L'IDE ne doit pas vous bloquer dans votre travail. 
 

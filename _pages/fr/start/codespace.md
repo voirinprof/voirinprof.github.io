@@ -12,14 +12,10 @@ typenav: start
 
 ## Introduction à GitHub Codespaces
 
-**GitHub Codespaces** est un environnement de développement cloud intégré à GitHub. Il permet de coder directement dans un navigateur ou via Visual Studio Code, sans configurer d’environnement local. Préinstallé avec Python, Git, et d’autres outils, il est idéal pour débuter rapidement en programmation.
+**GitHub Codespaces** est un environnement de développement cloud intégré à GitHub. Il permet de coder directement dans un navigateur ou via VS Code, sans configurer d’environnement local. Préinstallé avec Python, Git, et d’autres outils, il est idéal pour débuter rapidement en programmation.
 
 Ce guide vous montre comment créer un Codespace, écrire un programme Python simple, et gérer votre code avec Git.
 
-Avant de commencer :
-- **Définir l’objectif** : Par exemple, écrire un script Python qui calcule la somme de nombres.
-- **Préparer les outils** : Aucun logiciel local n’est requis, juste un compte GitHub.
-- **Planifier** : Écrire le code, tester, et sauvegarder les modifications dans un dépôt.
 
 ## Créer un Codespace
 
@@ -123,8 +119,9 @@ Vos modifications sont maintenant sauvegardées dans le dépôt GitHub.
 ```text
 numpy==1.26.4
 ```
-
 - **Sauvegardez régulièrement** : Les Codespaces sont temporaires ; poussez votre code sur GitHub pour le conserver.
+- **Arrêtez l'environnement** : Ne pas oublier de vérifier si l'environnement est actif, il est préférable de l'arrêter pour éviter de consommer le crédit horaire. L'environnement est alors conservé et il consomme moins de crédits.
+- **Consultez régulièrement les codespaces** : vous avez la possibilité de voir tous vos codespaces ici : [https://github.com/codespaces](https://github.com/codespaces)
 
 ## Ressources utiles
 

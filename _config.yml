@@ -125,12 +125,22 @@ author:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
-    - label: "GitHub"
+    - label: "GitHub (cookbook_python3)"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/yvoirin/cookbook_python3"
+    - label: "GitHub (voirinprof)"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/voirinprof"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/yves-voirin/"
+    - label: "Ressources"
+      icon: "fas fa-fw fa-link"
+      url: "/fr/python-useful/"
+      
 
 # Site Footer
 footer:

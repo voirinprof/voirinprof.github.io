@@ -9,7 +9,7 @@ toc_label: "Dans cette page"
 typenav: database
 ---
 
-> **_NOTE:_** La [documentation officielle de MongoDB](https://www.mongodb.com/docs/manual/) ainsi que la bibliothèque Python [PyMongo](https://pymongo.readthedocs.io/) sont des ressources essentielles pour aller plus loin.
+> **_NOTE:_** La [documentation officielle de MongoDB](https://www.mongodb.com/docs/manual/) ainsi que la bibliothèque Python [PyMongo](https://pymongo.readthedocs.io/) sont des ressources essentielles pour aller plus loin. Vous avez la possibilité d'utiliser ce GitHub Codespaces pour pratiquer avec MongoDb [https://github.com/voirinprof/gis_starter_mongodb_geolab](https://github.com/voirinprof/gis_starter_mongodb_geolab). Pour mettre en place un environnement Codespaces allez voir [Premiers pas avec GitHub Codespaces](/fr/codespaces-intro/).
 
 ## Introduction à MongoDB
 

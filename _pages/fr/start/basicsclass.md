@@ -24,7 +24,7 @@ Pour cette introduction, aucune bibliothèque externe n’est requise, car les f
 
 ### Qu’est-ce qu’une classe ?
 
-Les classes en Python sont des modèles pour créer des objets, qui sont des instances d’une classe. Elles permettent de regrouper des données (attributs) et des comportements (méthodes) dans une seule entité, favorisant un code organisé et réutilisable.
+Les classes en Python sont des modèles pour créer des objets, qui sont des instances d’une classe (en mémoire de l'ordinateur). Elles permettent de regrouper des données (attributs) et des comportements (méthodes) dans une seule entité, favorisant un code organisé et réutilisable.
 
 Pour définir une classe, utilisez le mot-clé `class` suivi du nom de la classe (généralement en CamelCase) et deux-points. Le corps de la classe est indenté.
 
@@ -63,7 +63,7 @@ C'est un moyen pour Python de savoir à quel objet une méthode fait référence
 
 * Pourquoi `self` est nécessaire ?
 
-Quand vous appelez une méthode sur un objet (par exemple, mon_objet.ma_methode()), Python passe automatiquement l'objet lui-même comme premier argument à la méthode. Par convention, cet argument est nommé `self`. Cela permet à la méthode de travailler avec les données spécifiques de cet objet.
+Quand vous appelez une méthode sur un objet (par exemple, mon_objet.ma_methode()), Python passe automatiquement une référence à l'objet comme premier argument à la méthode. Par convention, cet argument est nommé `self`. Cela permet à la méthode de travailler avec les données spécifiques de cet objet.
 
 Exemple d’une classe avec une méthode pour calculer la distance à l’origine (0, 0) :
 

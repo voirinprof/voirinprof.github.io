@@ -9,19 +9,12 @@ toc_label: "Dans cette page"
 typenav: database
 ---
 
+> **_NOTE:_** Vous avez la possibilité d'utiliser ce GitHub Codespaces pour pratiquer avec Redis [https://github.com/voirinprof/gis_starter_redis_geolab](https://github.com/voirinprof/gis_starter_redis_geolab), MongoDb [https://github.com/voirinprof/gis_starter_mongodb_geolab](https://github.com/voirinprof/gis_starter_mongodb_geolab) ou Neo4j [https://github.com/voirinprof/gis_starter_neo4j_geolab](https://github.com/voirinprof/gis_starter_neo4j_geolab). Pour mettre en place un environnement Codespaces allez voir [Premiers pas avec GitHub Codespaces](/fr/codespaces-intro/).
+
 ## Introduction aux bases de données NoSQL
 
-Les bases de données **NoSQL** (Not Only SQL) sont conçues pour gérer des données non structurées, semi-structurées ou structurées, avec une flexibilité et une scalabilité adaptées aux applications modernes. Contrairement aux bases relationnelles comme PostgreSQL, elles n’utilisent pas de schémas rigides et privilégient la performance pour des volumes de données importants ou des structures variées. Ce guide introduit trois bases NoSQL populaires : **Redis**, **MongoDB** et **Neo4j**, avec un focus sur leur utilisation pour des **données spatiales**.
+Les bases de données **NoSQL** (Not Only SQL) sont conçues pour gérer des données non structurées, semi-structurées ou structurées. Contrairement aux bases relationnelles comme PostgreSQL, elles n’utilisent pas de schémas rigides et privilégient la performance pour des volumes de données importants ou des structures variées. Ce guide introduit trois bases NoSQL populaires : **Redis**, **MongoDB** et **Neo4j**, avec un focus sur leur utilisation pour des **données spatiales**.
 
-Avant de commencer, il est essentiel de suivre ces étapes :
-* **Comprendre les besoins** : Identifier le type de données (clés-valeurs, documents, graphes) et les cas d’usage (cache, stockage de documents, relations complexes, ou analyses spatiales).
-* **Définir les entrées** : Quelles données seront stockées ? Par exemple, des coordonnées géographiques, des profils JSON ou des réseaux spatiaux.
-* **Définir les sorties** : Quels résultats attendre ? Par exemple, une récupération rapide de points à proximité ou une analyse de relations géographiques.
-* **Planifier les opérations** : Identifier les commandes ou requêtes nécessaires pour manipuler les données, y compris les requêtes spatiales.
-* **Diviser les problèmes complexes** : Découper les tâches complexes en étapes simples, comme la configuration, l’insertion et l’interrogation.
-* **Tester les résultats** : Vérifier les opérations avec des données de test pour garantir leur exactitude.
-
-Cette approche garantit une utilisation efficace des bases NoSQL, en évitant les erreurs courantes et en optimisant les performances pour les applications spatiales.
 
 ## Présentation de Redis, MongoDB et Neo4j
 
@@ -29,7 +22,9 @@ Cette approche garantit une utilisation efficace des bases NoSQL, en évitant le
 - **MongoDB** : Une base de données orientée documents, stockant des données sous forme de documents JSON/BSON. Elle prend en charge les index géospatiaux pour les requêtes de proximité ou d’intersection.
 - **Neo4j** : Une base de données orientée graphes, conçue pour modéliser des relations complexes, y compris des réseaux spatiaux (par exemple, routes ou infrastructures). Les données sont stockées sous forme de nœuds et d’arêtes.
 
-## Configuration et gestion des bases de données
+## Redis
+
+### Configuration
 
 Redis est léger et rapide. Pour démarrer, installez Redis localement ou utilisez un service cloud comme Redis Labs.
 
@@ -45,39 +40,9 @@ redis-cli
 
 > Conseil : Vérifiez que Redis est installé (`redis-server --version`) avant de lancer le serveur.
 
-MongoDB peut être installé localement ou utilisé via MongoDB Atlas (cloud). Pour une installation locale, téléchargez MongoDB Community Server.
 
-Démarrer le serveur MongoDB :
-```bash
-mongod
-```
+### Création et insertion de données
 
-Connexion via le client MongoDB Shell :
-```bash
-mongo
-```
-
-Créer une base de données :
-```javascript
-use ma_base_de_donnees
-```
-
-> Conseil : MongoDB crée automatiquement la base lors de la première insertion si elle n’existe pas.
-
-Neo4j propose une version desktop (Neo4j Desktop) ou serveur. Téléchargez Neo4j Community Edition pour commencer.
-
-Démarrer Neo4j (après installation) :
-1. Lancez Neo4j Desktop ou exécutez `neo4j start` pour un serveur local.
-2. Accédez à l’interface web (par défaut : `http://localhost:7474`).
-3. Connectez-vous avec les identifiants par défaut (souvent `neo4j/neo4j`) et changez le mot de passe.
-
-> Conseil : Familiarisez-vous avec le langage Cypher pour interroger Neo4j, en particulier pour les requêtes spatiales.
-
-Vidéo utile : [Introduction aux bases de données NoSQL](https://youtu.be/xh4gy1lbL2k)
-
-## Création et insertion de données
-
-### Redis
 Redis stocke des paires clé-valeur et prend en charge les données géospatiales via des commandes comme `GEOADD`. Exemple d’insertion d’un point d’intérêt (par exemple, la Tour Eiffel) :
 
 ```bash
@@ -93,48 +58,7 @@ GEOADD lieux 4.8357 45.7640 "Lyon" 5.3698 43.2965 "Marseille"
 
 > Conseil : Les clés géospatiales Redis sont idéales pour des recherches rapides de proximité.
 
-### MongoDB
-MongoDB organise les données en collections de documents et prend en charge les coordonnées géospatiales via le type `GeoJSON`. Exemple d’insertion dans une collection `points_interet` :
-
-```javascript
-db.points_interet.insertOne({
-    nom: "Tour Eiffel",
-    location: {
-        type: "Point",
-        coordinates: [2.2945, 48.8584]  // [longitude, latitude]
-    }
-})
-```
-
-Insérer plusieurs points :
-```javascript
-db.points_interet.insertMany([
-    { nom: "Lyon", location: { type: "Point", coordinates: [4.8357, 45.7640] } },
-    { nom: "Marseille", location: { type: "Point", coordinates: [5.3698, 43.2965] } }
-])
-```
-
-> Conseil : Assurez-vous que le champ `location` suit le format GeoJSON pour les requêtes spatiales.
-
-### Neo4j
-Neo4j utilise le langage **Cypher** pour créer des nœuds et des relations. Pour les données spatiales, Neo4j prend en charge le type `Point` (depuis la version 3.4). Exemple de création d’un lieu et d’une relation :
-
-```cypher
-CREATE (tour:PointInteret {nom: "Tour Eiffel", location: point({longitude: 2.2945, latitude: 48.8584, srid: 4326})})
-CREATE (lyon:PointInteret {nom: "Lyon", location: point({longitude: 4.8357, latitude: 45.7640, srid: 4326})})
-CREATE (tour)-[:PROCHE]->(lyon)
-```
-
-- `point` : Type spatial pour stocker des coordonnées.
-- `srid: 4326` : Système de référence WGS84.
-
-> Conseil : Utilisez des relations comme `PROCHE` pour modéliser des réseaux spatiaux.
-
-Vidéo utile : [Premiers pas avec MongoDB](https://youtu.be/EE8ZTQxa0AM)
-
-## Requêtes de base et spatiales
-
-### Redis
+### Requêtes de base et spatiales
 
 Récupérer une clé :
 ```bash
@@ -163,7 +87,63 @@ GEODIST lieux "Tour Eiffel" "Lyon" km
 
 > Conseil : Les commandes `GEORADIUS` et `GEORADIUSBYMEMBER` sont rapides mais limitées aux calculs sphériques simples.
 
-### MongoDB
+
+### Optimisation des performances
+
+- **Utilisez des structures adaptées** : Les ensembles géospatiaux (`GEOADD`) sont optimisés pour les recherches de proximité.
+- **Définissez des expirations** : Pour les données temporaires (par exemple, cache géospatial), utilisez `EXPIRE` :
+```bash
+SETEX cache:lieux:paris "donnees" 3600  # Expire après 1 heure
+```
+
+## MongoDB
+
+### Configuration
+
+MongoDB peut être installé localement ou utilisé via MongoDB Atlas (cloud). Pour une installation locale, téléchargez MongoDB Community Server.
+
+Démarrer le serveur MongoDB :
+```bash
+mongod
+```
+
+Connexion via le client MongoDB Shell :
+```bash
+mongo
+```
+
+Créer une base de données :
+```javascript
+use ma_base_de_donnees
+```
+
+> Conseil : MongoDB crée automatiquement la base lors de la première insertion si elle n’existe pas.
+
+### Création et insertion de données
+
+MongoDB organise les données en collections de documents et prend en charge les coordonnées géospatiales via le type `GeoJSON`. Exemple d’insertion dans une collection `points_interet` :
+
+```javascript
+db.points_interet.insertOne({
+    nom: "Tour Eiffel",
+    location: {
+        type: "Point",
+        coordinates: [2.2945, 48.8584]  // [longitude, latitude]
+    }
+})
+```
+
+Insérer plusieurs points :
+```javascript
+db.points_interet.insertMany([
+    { nom: "Lyon", location: { type: "Point", coordinates: [4.8357, 45.7640] } },
+    { nom: "Marseille", location: { type: "Point", coordinates: [5.3698, 43.2965] } }
+])
+```
+
+> Conseil : Assurez-vous que le champ `location` suit le format GeoJSON pour les requêtes spatiales.
+
+### Requêtes de base et spatiales
 
 Sélectionner tous les documents d’une collection :
 ```javascript
@@ -223,7 +203,51 @@ db.points_interet.find({
 
 > Conseil : Utilisez `$near` pour les recherches de proximité et `$geoWithin` pour les intersections.
 
-### Neo4j
+### Optimisation des performances
+
+- **Créez des index géospatiaux** : L’index `2dsphere` est essentiel pour les requêtes `$near` et `$geoWithin` :
+```javascript
+db.points_interet.createIndex({ location: "2dsphere" })
+```
+
+- **Limitez les champs** : Récupérez uniquement les champs nécessaires pour réduire la charge :
+```javascript
+db.points_interet.find({ nom: "Tour Eiffel" }, { nom: 1, location: 1, _id: 0 })
+```
+
+## Neo4j
+
+### Configuration
+
+Neo4j propose une version desktop (Neo4j Desktop) ou serveur. Téléchargez Neo4j Community Edition pour commencer.
+
+Démarrer Neo4j (après installation) :
+1. Lancez Neo4j Desktop ou exécutez `neo4j start` pour un serveur local.
+2. Accédez à l’interface web (par défaut : `http://localhost:7474`).
+3. Connectez-vous avec les identifiants par défaut (souvent `neo4j/neo4j`) et changez le mot de passe.
+
+> Conseil : Familiarisez-vous avec le langage Cypher pour interroger Neo4j, en particulier pour les requêtes spatiales.
+
+Vidéo utile : [Introduction aux bases de données NoSQL](https://www.youtube.com/watch?v=l8ALv9q8i6Q)
+
+### Création et insertion de données
+
+Neo4j utilise le langage **Cypher** pour créer des nœuds et des relations. Pour les données spatiales, Neo4j prend en charge le type `Point` (depuis la version 3.4). Exemple de création d’un lieu et d’une relation :
+
+```cypher
+CREATE (tour:PointInteret {nom: "Tour Eiffel", location: point({longitude: 2.2945, latitude: 48.8584, srid: 4326})})
+CREATE (lyon:PointInteret {nom: "Lyon", location: point({longitude: 4.8357, latitude: 45.7640, srid: 4326})})
+CREATE (tour)-[:PROCHE]->(lyon)
+```
+
+- `point` : Type spatial pour stocker des coordonnées.
+- `srid: 4326` : Système de référence WGS84.
+
+> Conseil : Utilisez des relations comme `PROCHE` pour modéliser des réseaux spatiaux.
+
+Vidéo utile : [Premiers pas avec MongoDB (en anglais)](https://youtu.be/EE8ZTQxa0AM)
+
+### Requêtes de base et spatiales
 
 Trouver tous les nœuds avec l’étiquette `PointInteret` :
 ```cypher
@@ -261,29 +285,10 @@ RETURN p1.nom, p2.nom
 
 > Conseil : La fonction `distance` utilise des calculs sphériques pour les points WGS84.
 
-Vidéo utile : [Introduction à Neo4j et Cypher](https://youtu.be/5jAa7UXdg4Y)
+Vidéo utile : [Introduction à Neo4j et Cypher (en anglais)](https://www.youtube.com/watch?v=pMjwgKqMzi8)
 
-## Optimisation des performances
+### Optimisation des performances
 
-### Redis
-- **Utilisez des structures adaptées** : Les ensembles géospatiaux (`GEOADD`) sont optimisés pour les recherches de proximité.
-- **Définissez des expirations** : Pour les données temporaires (par exemple, cache géospatial), utilisez `EXPIRE` :
-```bash
-SETEX cache:lieux:paris "donnees" 3600  # Expire après 1 heure
-```
-
-### MongoDB
-- **Créez des index géospatiaux** : L’index `2dsphere` est essentiel pour les requêtes `$near` et `$geoWithin` :
-```javascript
-db.points_interet.createIndex({ location: "2dsphere" })
-```
-
-- **Limitez les champs** : Récupérez uniquement les champs nécessaires pour réduire la charge :
-```javascript
-db.points_interet.find({ nom: "Tour Eiffel" }, { nom: 1, location: 1, _id: 0 })
-```
-
-### Neo4j
 - **Indexez les propriétés clés** : Accélérez les recherches sur les propriétés comme `nom` :
 ```cypher
 CREATE INDEX FOR (p:PointInteret) ON (p.nom)
@@ -311,4 +316,4 @@ Exemple de contrainte dans Neo4j pour garantir l’unicité des noms :
 CREATE CONSTRAINT FOR (p:PointInteret) REQUIRE p.nom IS UNIQUE
 ```
 
-Vidéo utile : [Redis pour les débutants](https://youtu.be/jgpVdJB2sKQ)
+Vidéo utile : [Redis pour les débutants (en anglais)](https://youtu.be/jgpVdJB2sKQ)

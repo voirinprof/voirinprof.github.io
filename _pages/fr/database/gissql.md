@@ -9,20 +9,11 @@ toc_label: "Dans cette page"
 typenav: database
 ---
 
+> **_NOTE:_** Vous avez la possibilité d'utiliser ce GitHub Codespaces pour pratiquer les requêtes [https://github.com/voirinprof/gis_starter_postgis_geolab](https://github.com/voirinprof/gis_starter_postgis_geolab). **pgAdmin4** est disponible dans l'environnement. Pour mettre en place un environnement Codespaces allez voir [Premiers pas avec GitHub Codespaces](/fr/codespaces-intro/).
+
 ## Introduction à PostgreSQL et PostGIS
 
-PostgreSQL est un système de gestion de bases de données relationnelles (SGBDR) open-source, puissant et extensible. PostGIS est une extension de PostgreSQL qui ajoute des fonctionnalités pour gérer des données géographiques et spatiales, permettant de stocker, interroger et analyser des géométries comme des points, lignes et polygones.
-
-Avant de commencer à travailler avec PostgreSQL/PostGIS, il est essentiel de comprendre les étapes suivantes :
-
-* **Comprendre les besoins** : Identifier les données à stocker (attributs, géométries) et les types de requêtes à effectuer (recherches spatiales, calculs de distances, etc.).
-* **Définir les entrées** : Quelles sont les tables, colonnes et types de données nécessaires ? Par exemple, des coordonnées géographiques ou des attributs alphanumériques.
-* **Définir les sorties** : Quel type de résultat attendre ? Par exemple, une liste de points à proximité ou une intersection de polygones.
-* **Planifier les requêtes** : Identifier les opérations SQL/PostGIS nécessaires pour passer des données brutes aux résultats souhaités.
-* **Diviser les problèmes complexes** : Découper les requêtes complexes en sous-requêtes ou en étapes intermédiaires.
-* **Tester les résultats** : Vérifier que les requêtes renvoient des données correctes avec des cas de test bien définis.
-
-Cette approche garantit une utilisation efficace de PostgreSQL/PostGIS, en évitant les erreurs courantes et en optimisant les performances.
+PostgreSQL est un système de gestion de bases de données relationnelles (SGBDR) qui dispose d'une extension PostGIS pour gérer des données géographiques et spatiales, permettant de stocker, interroger et analyser des géométries comme des points, lignes et polygones.
 
 ## Création et gestion des bases de données
 
@@ -52,7 +43,7 @@ Pour se connecter à une base spécifique :
 \c ma_base_de_donnees
 ```
 
-Vidéo utile : [Introduction à PostgreSQL](https://youtu.be/4vJy2N7tQ0Q)
+Vidéo utile : [Introduction à PostgreSQL (en anglais)](https://www.youtube.com/watch?v=74IWNUja05w)
 
 ## Création de tables avec des données spatiales
 
@@ -124,7 +115,7 @@ DELETE FROM points_interet
 WHERE id = 1;
 ```
 
-Vidéo utile : [Les bases des requêtes SQL avec PostgreSQL](https://youtu.be/7S_tz1z_5bA)
+Vidéo utile : [Les bases des requêtes SQL avec PostgreSQL (en anglais)](https://youtu.be/7S_tz1z_5bA)
 
 ## Requêtes spatiales avec PostGIS
 
@@ -165,7 +156,7 @@ WHERE ST_Within(
 
 > Conseil : Assurez-vous que toutes les géométries utilisent le même SRID pour éviter des erreurs.
 
-Vidéo utile : [Introduction aux requêtes spatiales avec PostGIS](https://youtu.be/8BveB1N0b2U)
+Vidéo utile : [Introduction aux requêtes spatiales avec PostGIS](https://www.youtube.com/watch?v=yP5-GVnoy5I)
 
 ## Indexation pour les performances
 

@@ -13,7 +13,34 @@ Si vous êtes un développeur Python intéressé par la géomatique, ce site est
 
 Le site comprend des tutoriels et des exemples de code Python pour la manipulation de données géospatiales, la visualisation de cartes, l'analyse de données géospatiales, et bien plus encore. Vous pouvez également trouver des liens vers des bibliothèques Python populaires pour la géomatique telles que Geopandas, Shapely et Fiona.
 
+Ce site tente d'apporter des notions sur différents aspects de la programmation qu'un développeur en géomatique devrait maîtriser, notamment :
+
+- **Mettre en place un environnement de développement complet**  
+  (Visual Studio Code, Git, Docker, installation, ...)
+
+- **Concevoir, administrer et interroger des bases de données relationnelles**  
+  (modélisation SQL, optimisation des requêtes, intégration spatiale, ...)
+
+- **Explorer des alternatives aux bases classiques**  
+  (mise en œuvre de bases NoSQL adaptées aux besoins géospatiaux : MongoDB, Redis, Neo4j, ...)
+
+- **Déployer et administrer un serveur cartographique**  
+  (QGIS Server, GeoServer, MapServer, gestion de services OGC : WMS, WFS, WCS, WPS, ...)
+
+- **Mettre en place des services web géospatiaux personnalisés**  
+  (API REST, services de géocodage, routage, analyse spatiale, ...)
+
+- **Développer des clients web traditionnels**  
+  (HTML5, JavaScript, CSS3, intégration de bibliothèques cartographiques comme Leaflet, OpenLayers)
+
+- **Utiliser des frameworks modernes pour développer des interfaces riches**  
+  (VUE.js, React, développement d'applications interactives et performantes)
+
+- **Étendre les fonctionnalités de QGIS**  
+  (développement de plugins Python, création de traitements personnalisés, intégration dans les workflows existants)
+
 La figure ci-dessous illustre ce que devrait connaître un développeur en Géomatique. Le site vous donnera des bases pour aborder tous ces points.
+
 <pre class="mermaid">
       mindmap
   root((Développeur))
@@ -41,6 +68,8 @@ La figure ci-dessous illustre ce que devrait connaître un développeur en Géom
       :::thirdblock
     Client
     :::secondblock
+      QGis
+      :::thirdblock
       JS, CSS, HTML
       :::thirdblock
       Frameworks
@@ -49,9 +78,7 @@ La figure ci-dessous illustre ce que devrait connaître un développeur en Géom
     Divers
     :::secondblock
       IA
-      :::thirdblock
-      QGis
-      :::thirdblock
+      :::thirdblock      
       Tests
       :::thirdblock
     </pre>

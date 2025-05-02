@@ -9,7 +9,7 @@ toc_label: "Dans cette page"
 typenav: database
 ---
 
-> **_NOTE:_** La [documentation officielle de PostGIS](https://postgis.net/documentation/) ainsi que la bibliothèque Python [psycopg](https://www.psycopg.org/) sont des ressources essentielles pour aller plus loin.
+> **_NOTE:_** La [documentation officielle de PostGIS](https://postgis.net/documentation/) ainsi que la bibliothèque Python [psycopg](https://www.psycopg.org/) sont des ressources essentielles pour aller plus loin. Il faut parfois utiliser [psycopg2](https://github.com/psycopg/psycopg2) avec Python 3. Vous avez la possibilité d'utiliser ce GitHub Codespaces pour pratiquer les requêtes [https://github.com/voirinprof/gis_starter_postgis_geolab](https://github.com/voirinprof/gis_starter_postgis_geolab). **pgAdmin4** est disponible dans l'environnement. Pour mettre en place un environnement Codespaces allez voir [Premiers pas avec GitHub Codespaces](/fr/codespaces-intro/).
 
 ## Introduction à PostGIS
 

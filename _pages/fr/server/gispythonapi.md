@@ -4,6 +4,7 @@ permalink: /fr/web-python-api/
 lang: fr
 date: 2025-04-25T14:30:00+00:00
 toc: true
+toc_sticky: true
 toc_label: "Sur cette page"
 typenav: gisserver
 ---
@@ -141,6 +142,6 @@ def create_item(item: Item):
 
 ## Ressources utiles
 
-- Flask : [https://flask.palletsprojects.com/fr/](https://flask.palletsprojects.com/fr/)
-- FastAPI : [https://fastapi.tiangolo.com/fr/](https://fastapi.tiangolo.com/fr/)
-- Vidéo : [FastAPI vs Flask - Une comparaison](https://youtu.be/LhGsy7sjKas)
+- Flask : [https://flask.palletsprojects.com/en/stable/](https://flask.palletsprojects.com/en/stable/)
+- FastAPI : [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
+- Vidéo : [FastAPI vs Flask - Une comparaison (en anglais)](https://www.youtube.com/watch?v=itfI5W3pCHE)

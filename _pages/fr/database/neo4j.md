@@ -9,7 +9,7 @@ toc_label: "Dans cette page"
 typenav: database
 ---
 
-> **_NOTE:_** La [documentation officielle de Neo4j](https://neo4j.com/docs/) ainsi que la bibliothèque Python [neo4j-driver](https://neo4j.com/docs/api/python-driver/current/) offrent des ressources détaillées pour explorer davantage.
+> **_NOTE:_** La [documentation officielle de Neo4j](https://neo4j.com/docs/) ainsi que la bibliothèque Python [neo4j-driver](https://neo4j.com/docs/api/python-driver/current/) offrent des ressources détaillées pour explorer davantage. Vous avez la possibilité d'utiliser ce GitHub Codespaces pour pratiquer avec Neo4j [https://github.com/voirinprof/gis_starter_neo4j_geolab](https://github.com/voirinprof/gis_starter_neo4j_geolab). Pour mettre en place un environnement Codespaces allez voir [Premiers pas avec GitHub Codespaces](/fr/codespaces-intro/).
 
 ## Introduction à Neo4j
 

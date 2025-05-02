@@ -4,9 +4,12 @@ permalink: /fr/js-basics/
 lang: fr
 date: 2023-04-24T03:02:20+00:00
 toc: true
+toc_sticky: true
 toc_label: "Dans cette page"
 typenav: client
 ---
+
+> **_NOTE:_** Vous avez la possibilité d'utiliser ce GitHub Codespaces pour pratiquer avec JavaScript et Phaser [https://github.com/voirinprof/gis_starter_phaser_geolab](https://github.com/voirinprof/gis_starter_phaser_geolab). Pour mettre en place un environnement Codespaces allez voir [Premiers pas avec GitHub Codespaces](/fr/codespaces-intro/).
 
 ## Règles de base
 
@@ -343,3 +346,38 @@ Les fonctions sont un concept fondamental en JavaScript, et elles jouent un rôl
 > Conseil : utilisez des noms explicites pour les fonctions, ceci facilitera la compréhension du code. Si je nomme une fonction `ManhattanDistance`, on comprend assez bien que la fonction va calculer la distance de Manhattan.
 
 Vidéo utile : [Le principe des fonctions en Javascript (avec Phaser)](https://youtu.be/ElWWN8U43lU)
+
+## TypeScript
+
+TypeScript est une surcouche de JavaScript développée par Microsoft qui ajoute des fonctionnalités puissantes au langage, notamment le **typage statique**. Cela signifie que vous pouvez spécifier le type des variables et des fonctions dès l’écriture du code, ce qui permet de détecter beaucoup d’erreurs **avant même d’exécuter** le programme.
+
+**Pourquoi utiliser TypeScript ?**
+
+- Meilleure lisibilité et maintenance du code
+- Moins d’erreurs grâce à la détection anticipée
+- Autocomplétion et documentation automatique dans les éditeurs modernes (comme VS Code)
+- Compatible avec tout projet JavaScript
+
+**Exemple de différence :**
+
+```javascript
+// En JavaScript
+let score = 10;
+score = "dix"; // Pas d’erreur au départ, mais peut provoquer un bug plus tard
+```
+
+```typescript
+// En TypeScript
+let score: number = 10;
+score = "dix"; // ❌ Erreur détectée immédiatement
+```
+
+**Points forts de TypeScript**
+
+| Caractéristique         | JavaScript           | TypeScript                           |
+|-------------------------|----------------------|--------------------------------------|
+| Typage                  | Dynamique            | Statique (optionnel mais recommandé) |
+| Détection d’erreurs     | À l’exécution        | À la compilation                     |
+| Complétion automatique  | Basique              | Avancée avec types personnalisés     |
+| Utilisation             | Directe dans le navigateur | Nécessite une compilation (`tsc`) |
+| Courbe d’apprentissage  | Très facile          | Légèrement plus technique            |
