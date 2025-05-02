@@ -8,9 +8,9 @@ main:
     - title: "Server"
       url: /en/gis-docker/
     - title: "Client"
-      url: /en/js-html-css-basics/
+      url: /en/js-basics/
     - title: "Miscellaneous"
-      url: /en/gis-docker/
+      url: /en/python-useful/
   fr:
     - title: "Bien débuter"
       url: /fr/quick-start/
@@ -177,16 +177,12 @@ quick-links:
             url: /fr/webgis/
   misc:
     en:
-      - title: "Miscellaneous"
+      - title: Miscellaneous
         children:
-          - title: "Git Basics"
-            url: /en/git-basics/
-          - title: "Markdown Basics"
-            url: /en/markdown-basics/
-          - title: "Jupyter Notebook Basics"
-            url: /en/jupyter-basics/
-          - title: "Python Libraries"
-            url: /en/python-libraries/
+          - title: "Useful codes"
+            url: /en/python-useful/
+          - title: "Approaches for testing"
+            url: /en/testing-useful/
     fr:
       - title: Divers
         children:
