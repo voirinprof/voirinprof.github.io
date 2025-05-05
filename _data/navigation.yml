@@ -183,6 +183,8 @@ quick-links:
             url: /en/python-useful/
           - title: "Approaches for testing"
             url: /en/testing-useful/
+          - title: "Celery (automation)"
+            url: /en/celery-intro/
     fr:
       - title: Divers
         children:
@@ -190,4 +192,6 @@ quick-links:
             url: /fr/python-useful/
           - title: "Approches pour les tests"
             url: /fr/testing-useful/
+          - title: "Celery (automatisation)"
+            url: /fr/celery-intro/
           
