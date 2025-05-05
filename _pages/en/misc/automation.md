@@ -9,7 +9,7 @@ toc_label: "On this page"
 typenav: misc
 ---
 
-> **_NOTE:_** For advanced details, consult the [official Celery documentation](https://docs.celeryq.dev/en/stable/). An example of a Flask web service with Celery can be found in this repository: [https://github.com/celery/celery-examples](https://github.com/celery/celery-examples)
+> **_NOTE:_** For advanced details, consult the [official Celery documentation](https://docs.celeryq.dev/en/stable/). An example of a Flask web service with Celery can be found in this repository: [https://github.com/voirinprof/gis_celery_automation_docker](https://github.com/voirinprof/gis_celery_automation_docker)
 
 ## Introduction
 

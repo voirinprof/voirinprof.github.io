@@ -9,7 +9,7 @@ toc_label: "Dans cette page"
 typenav: misc
 ---
 
-> **_NOTE:_** Pour des détails avancés, consultez la [documentation officielle de Celery](https://docs.celeryq.dev/en/stable/). Un exemple de service web `Flask` avec `Celery` peut être trouvé dans ce dépôt : [https://github.com/celery/celery-examples](https://github.com/celery/celery-examples)
+> **_NOTE:_** Pour des détails avancés, consultez la [documentation officielle de Celery](https://docs.celeryq.dev/en/stable/). Un exemple de service web `Flask` avec `Celery` peut être trouvé dans ce dépôt : [https://github.com/voirinprof/gis_celery_automation_docker](https://github.com/voirinprof/gis_celery_automation_docker)
 
 ## Introduction
 
