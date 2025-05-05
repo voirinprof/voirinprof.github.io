@@ -6,7 +6,7 @@ date: 2025-04-26T10:00:00+00:00
 toc: true
 toc_sticky: true
 toc_label: "Dans cette page"
-typenav: start
+typenav: dev
 ---
 > **_NOTE:_** La [documentation officielle de GitHub Codespaces](https://docs.github.com/fr/codespaces) fournit des instructions détaillées pour démarrer. Un exemple de github codespaces est disponible à cette adresse : [https://github.com/voirinprof/geolabspace](https://github.com/voirinprof/geolabspace)
 

@@ -57,8 +57,6 @@ La figure ci-dessous illustre ce que devrait connaître un développeur en Géom
         Neo4j
     Serveur
     :::secondblock
-      Docker
-      :::thirdblock
       WebAPI
       :::thirdblock
         Flask
@@ -79,6 +77,14 @@ La figure ci-dessous illustre ce que devrait connaître un développeur en Géom
     :::secondblock
       IA
       :::thirdblock      
+    Dev
+    :::secondblock
+      Docker
+      :::thirdblock      
+      Codedpaces
+      :::thirdblock      
+      GIT
+      :::thirdblock      
       Tests
       :::thirdblock
     </pre>
@@ -91,7 +97,7 @@ J'espère que vous apprécierez le site et que vous le trouverez utile dans vos 
 pre.mermaid {
   
   border: 2px dashed #eaeaea;   /* bordure */
-  padding: 20px;             /* espace interne */
+  padding: 0% 0% 0% 10%;             /* espace interne */
   border-radius: 10px;       /* coins arrondis */
   overflow: auto;            /* scroll si besoin */
   /* font-family: "consolas" */

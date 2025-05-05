@@ -3,10 +3,12 @@ main:
   en:
     - title: "Start here"
       url: /en/quick-start/
+    - title: "Dev"
+      url: /en/codespaces-intro/
     - title: "Database"
       url: /en/postgresql-postgis-basics/
     - title: "Server"
-      url: /en/gis-docker/
+      url: /en/celery-intro/
     - title: "Client"
       url: /en/js-basics/
     - title: "Miscellaneous"
@@ -14,10 +16,12 @@ main:
   fr:
     - title: "Bien débuter"
       url: /fr/quick-start/
+    - title: "Dev"
+      url: /fr/codespaces-intro/
     - title: "Base de données"
       url: /fr/postgresql-postgis-basics/
     - title: "Serveur"
-      url: /fr/gis-docker/
+      url: /fr/celery-intro/
     - title: "Client"
       url: /fr/js-basics/
     - title: "Divers"
@@ -31,8 +35,7 @@ quick-links:
             url: /en/quick-start/
           - title: "Activate Copilot"
             url: /en/vscode-ai/     
-          - title: "GitHub Codespaces"
-            url: /en/codespaces-intro/
+          
       - title: "Basics"
         children:
           - title: "The basics in Python"
@@ -50,8 +53,7 @@ quick-links:
             url: /fr/quick-start/
           - title: "Activer Copilot"
             url: /fr/vscode-ai/     
-          - title: "GitHub Codespaces"
-            url: /fr/codespaces-intro/
+          
       - title: Notions de base
         children:
           - title: "Les bases en Python"
@@ -111,12 +113,10 @@ quick-links:
             url: /fr/routing-redis-neo4j/  
   gisserver:
     en:
-      - title: "Docker"
+      - title: "Automation"
         children:
-          - title: "Introduction to Docker"
-            url: /en/gis-docker/
-          - title: "Examples of Docker"
-            url: /en/python-useful/
+          - title: "Celery"
+            url: /en/celery-intro/
       - title: "Web API"
         children:
           - title: "Basics of Flask and FastAPI"
@@ -130,12 +130,10 @@ quick-links:
           - title: "QGIS Server and Python"
             url: /en/qgis-server-intro/
     fr:
-      - title: "Docker"
+      - title: "Automatisation"
         children:
-          - title: "Introduction à Docker"
-            url: /fr/gis-docker/
-          - title: "Des exemples de Docker"
-            url: /fr/python-useful/
+          - title: "Celery"
+            url: /fr/celery-intro/
       - title: "Web API"
         children:
           - title: "Bases de Flask et FastAPI"
@@ -181,17 +179,29 @@ quick-links:
         children:
           - title: "Useful codes"
             url: /en/python-useful/
-          - title: "Approaches for testing"
-            url: /en/testing-useful/
-          - title: "Celery (automation)"
-            url: /en/celery-intro/
+          
     fr:
       - title: Divers
         children:
           - title: "Répertoire des codes utiles"
             url: /fr/python-useful/
-          - title: "Approches pour les tests"
-            url: /fr/testing-useful/
-          - title: "Celery (automatisation)"
-            url: /fr/celery-intro/
           
+  dev:
+    en:
+      - title: Development
+        children:
+          - title: "GitHub Codespaces"
+            url: /en/codespaces-intro/
+          - title: "Introduction to Docker"
+            url: /en/gis-docker/          
+          - title: "Approaches for testing"
+            url: /en/testing-useful/
+    fr:
+      - title: Développement
+        children:   
+          - title: "GitHub Codespaces"
+            url: /fr/codespaces-intro/                  
+          - title: "Introduction à Docker"
+            url: /fr/gis-docker/
+          - title: "Approches pour les tests"
+            url: /fr/testing-useful/  

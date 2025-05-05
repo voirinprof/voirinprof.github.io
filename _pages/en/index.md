@@ -57,9 +57,7 @@ The diagram below illustrates what a geomatics developer should ideally know. Th
         MongoDB
         Neo4j
     Server
-    :::secondblock
-      Docker
-      :::thirdblock
+    :::secondblock      
       WebAPI
       :::thirdblock
         Flask
@@ -80,7 +78,15 @@ The diagram below illustrates what a geomatics developer should ideally know. Th
     :::secondblock
       AI
       :::thirdblock      
-      Testing
+    Dev
+    :::secondblock
+      Docker
+      :::thirdblock      
+      Codedpaces
+      :::thirdblock      
+      GIT
+      :::thirdblock      
+      Tests
       :::thirdblock
 </pre>
 
@@ -91,7 +97,7 @@ I hope you enjoy the site and find it helpful for your Python geomatics projects
 pre.mermaid {
   
   border: 2px dashed #eaeaea;   /* border */
-  padding: 20px;                /* inner spacing */
+  padding: 0% 0% 0% 10%;                /* inner spacing */
   border-radius: 10px;          /* rounded corners */
   overflow: auto;               /* scroll if needed */
   /* font-family: "consolas" */

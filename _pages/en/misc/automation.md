@@ -6,7 +6,7 @@ date: 2025-05-05T12:00:00+00:00
 toc: true
 toc_sticky: true
 toc_label: "On this page"
-typenav: misc
+typenav: gisserver
 ---
 
 > **_NOTE:_** For advanced details, consult the [official Celery documentation](https://docs.celeryq.dev/en/stable/). An example of a Flask web service with Celery can be found in this repository: [https://github.com/voirinprof/gis_celery_automation_docker](https://github.com/voirinprof/gis_celery_automation_docker)
