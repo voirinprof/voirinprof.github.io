@@ -140,6 +140,12 @@ SELECT * FROM pgr_drivingDistance(
 - **Accessibility analysis** (distance to hospitals, schools)
 - **Origin-Destination matrices for mobility flows**
 
+## If the problem becomes more complex
+
+If your problem involves managing multiple vehicles, multiple deliveries, a capacity for each vehicle, and different delivery quantities for each client, it becomes a more complex problem (with many constraints).
+
+You can use `or-tools` to tackle this kind of optimization. Here's an example of a fully functional application: [https://github.com/voirinprof/gis_advanced_routing_docker](https://github.com/voirinprof/gis_advanced_routing_docker)
+
 ## Useful Resources
 
 - [Official pgRouting Documentation](https://pgrouting.org/documentation.html)
