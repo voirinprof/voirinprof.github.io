@@ -48,7 +48,7 @@
 {%- endif -%}
 
 <title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
-<meta name="description" content="{{ seo_description }}">
+<meta name="description" content="{{ site.data.i18n[page.lang].seo_description }}">
 
 {% if author.name %}
   <meta name="author" content="{{ author.name | default: author }}">
@@ -58,13 +58,13 @@
 {% endif %}
 
 <meta property="og:type" content="{{ og_type }}">
-<meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:locale" content="{{ page.lang | replace: "-", "_" | default: "en_US" }}">
+<meta property="og:site_name" content="{{ site.data.i18n[page.lang].title }}">
 <meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
 <meta property="og:url" content="{{ canonical_url }}">
 
 {% if seo_description %}
-  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:description" content="{{ site.data.i18n[page.lang].seo_description }}">
 {% endif %}
 
 {% if page_large_image %}

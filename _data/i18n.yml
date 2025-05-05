@@ -1,6 +1,7 @@
 fr:
   title: "Coder avec Python"
   description: "Partir de zéro pour coder en géomatique."
+  seo_description: "Apprenez la géomatique avec Python ! Tutoriels, exemples de code, et ressources sur GeoPandas, Shapely, QGIS, bases de données, et services web géospatiaux."
   author:
     name: "Un passionné de géomatique"
     bio: "Ce site rassemble des ressources créées pour la communauté des géomaticiens. Il est réalisé par un développeur bénévole."
@@ -10,6 +11,7 @@ fr:
 en:
   title: "Coding in Python for Geomatics"
   description: "A site with resources for the geomatics professional."
+  seo_description: "Master geospatial Python! Tutorials, code examples, and resources on GeoPandas, Shapely, QGIS, databases, and geospatial web services for developers."
   author:
     name: "Collective of developers"
     bio: "The site brings together resources for the geomatics professional. It is created by volunteer developers and members of the Department of Applied Geomatics at the University of Sherbrooke."
