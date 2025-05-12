@@ -194,6 +194,8 @@ quick-links:
             url: /en/codespaces-intro/
           - title: "Introduction to Docker"
             url: /en/gis-docker/          
+          - title: "Deploy to a server"
+            url: /en/deploy-vps/ 
           - title: "Approaches for testing"
             url: /en/testing-useful/
     fr:
@@ -203,5 +205,7 @@ quick-links:
             url: /fr/codespaces-intro/                  
           - title: "Introduction à Docker"
             url: /fr/gis-docker/
+          - title: "Déployer sur un serveur"
+            url: /fr/deploy-vps/ 
           - title: "Approches pour les tests"
             url: /fr/testing-useful/  
