@@ -198,6 +198,8 @@ quick-links:
             url: /en/deploy-vps/ 
           - title: "Approaches for testing"
             url: /en/testing-useful/
+          - title: "Scalability and high availability"
+            url: /en/scalability/
     fr:
       - title: Développement
         children:   
@@ -208,4 +210,6 @@ quick-links:
           - title: "Déployer sur un serveur"
             url: /fr/deploy-vps/ 
           - title: "Approches pour les tests"
-            url: /fr/testing-useful/  
+            url: /fr/testing-useful/
+          - title: "Scalabilité et haute disponibilité"
+            url: /fr/scalability/
