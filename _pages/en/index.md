@@ -86,7 +86,9 @@ The diagram below illustrates what a geomatics developer should ideally know. Th
       :::thirdblock      
       GIT
       :::thirdblock      
-      Tests
+      Tests/Locust
+      :::thirdblock
+      MicroK8s
       :::thirdblock
 </pre>
 

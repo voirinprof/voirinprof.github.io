@@ -85,7 +85,9 @@ La figure ci-dessous illustre ce que devrait connaître un développeur en Géom
       :::thirdblock      
       GIT
       :::thirdblock      
-      Tests
+      Tests/Locust
+      :::thirdblock
+      MicroK8s
       :::thirdblock
     </pre>
     
