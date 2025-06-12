@@ -121,6 +121,8 @@ quick-links:
         children:
           - title: "Basics of Flask and FastAPI"
             url: /en/web-python-api/
+          - title: "PyWPS and WPS"
+            url: /en/pywps/
       - title: "Map Server"
         children:
           - title: "Basics of GeoServer and Mapserver"
@@ -138,6 +140,8 @@ quick-links:
         children:
           - title: "Bases de Flask et FastAPI"
             url: /fr/web-python-api/
+          - title: "PyWPS et WPS"
+            url: /fr/pywps/
       - title: "Serveur cartographique"
         children:
           - title: "Notions sur GeoServer et Mapserver"
