@@ -54,6 +54,12 @@ quick-links:
             url: /en/gis-level2/
           - title: "Advanced vector and raster"
             url: /en/advanced-vector-raster/
+      - title: "Quick reference"
+        children:
+          - title: "pandas and GeoPandas cheat sheet"
+            url: /en/pandas-geopandas/
+          - title: "Rasterio cheat sheet"
+            url: /en/rasterio/
     fr:
       - title: "Bien débuter"
         children:      
@@ -76,6 +82,12 @@ quick-links:
             url: /fr/gis-level2/
           - title: "Vecteur et raster avancés"
             url: /fr/advanced-vector-raster/
+      - title: "À savoir"
+        children:
+          - title: "Fiche pratique pandas et GeoPandas"
+            url: /fr/pandas-geopandas/
+          - title: "Fiche pratique Rasterio"
+            url: /fr/rasterio/
   database:
     en:
       - title: "SQL/NoSQL Basics"

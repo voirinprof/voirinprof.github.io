@@ -1,5 +1,5 @@
 ---
-title: "QGis et Python"
+title: "Applications WebGIS"
 permalink: /fr/webgis/
 lang: fr
 date: 2025-04-25T10:00:00+00:00
