@@ -211,12 +211,16 @@ quick-links:
         children:
           - title: "Useful codes"
             url: /en/python-useful/
+          - title: "Documentation links"
+            url: /en/python-useful/#links
           
     fr:
       - title: Divers
         children:
           - title: "Répertoire des codes utiles"
             url: /fr/python-useful/
+          - title: "Liens vers les documentations"
+            url: /fr/python-useful/#liens
           
   dev:
     en:

@@ -2,7 +2,7 @@
 title: "Répertoire des codes utiles"
 permalink: /fr/python-useful/
 lang: fr
-date: 2025-04-24T03:02:20+00:00
+date: 2026-10-16T08:31:13-04:00
 toc: true
 toc_sticky: true
 toc_label: "Dans cette page"
@@ -175,6 +175,95 @@ Chaque dépôt est accompagné d'une description rapide, d'un lien d'accès et p
 - **Mes tutoriels et cours** : guides pas-à-pas pour découvrir Python appliqué aux SIG
 
 > 📌 **À venir** : de nouveaux projets autour de QGIS Python plugins, ...
+
+---
+
+## Liens
+
+### Langages et applications web
+
+- [Documentation Python](https://docs.python.org/fr/3/)
+- [Documentation JavaScript (MDN)](https://developer.mozilla.org/fr/docs/Web/JavaScript)
+- [Documentation TypeScript](https://www.typescriptlang.org/docs/)
+- [Documentation Phaser](https://docs.phaser.io/)
+- [Documentation Vue.js](https://vuejs.org/guide/)
+- [Documentation React](https://react.dev/learn)
+- [Documentation Angular](https://angular.dev/overview)
+- [Documentation Vite](https://vite.dev/guide/)
+- [Documentation Pinia](https://pinia.vuejs.org/)
+- [Documentation Leaflet](https://leafletjs.com/reference.html)
+- [Documentation OpenLayers](https://openlayers.org/en/latest/apidoc/)
+- [Documentation MapLibre GL JS](https://maplibre.org/maplibre-gl-js/docs/)
+
+### Python et géomatique
+
+- [Documentation NumPy](https://numpy.org/doc/stable/)
+- [Documentation pandas](https://pandas.pydata.org/docs/)
+- [Documentation GeoPandas](https://geopandas.org/en/stable/)
+- [Documentation Shapely](https://shapely.readthedocs.io/en/stable/)
+- [Documentation Fiona](https://fiona.readthedocs.io/en/stable/)
+- [Documentation Rasterio](https://rasterio.readthedocs.io/en/stable/)
+- [Documentation GDAL](https://gdal.org/en/stable/)
+- [Documentation pyproj](https://pyproj4.github.io/pyproj/stable/)
+- [Documentation Matplotlib](https://matplotlib.org/stable/)
+- [Documentation Folium](https://python-visualization.github.io/folium/latest/)
+- [Documentation NetworkX](https://networkx.org/documentation/stable/)
+- [Documentation Rtree](https://rtree.readthedocs.io/en/latest/)
+- [Documentation Pillow](https://pillow.readthedocs.io/en/stable/)
+- [Documentation OpenCV](https://docs.opencv.org/4.x/)
+- [Documentation Requests](https://requests.readthedocs.io/en/latest/)
+- [Documentation PyYAML](https://pyyaml.org/wiki/PyYAMLDocumentation)
+
+### Données géospatiales et traitement à grande échelle
+
+- [Documentation PySTAC Client](https://pystac-client.readthedocs.io/en/stable/)
+- [Documentation odc-stac](https://odc-stac.readthedocs.io/en/latest/)
+- [Documentation Dask](https://docs.dask.org/en/stable/)
+- [Documentation xarray](https://docs.xarray.dev/en/stable/)
+- [Documentation de l’API Python Google Earth Engine](https://developers.google.com/earth-engine/guides/python_install)
+
+### Services web, automatisation et tests
+
+- [Documentation Flask](https://flask.palletsprojects.com/en/stable/)
+- [Documentation FastAPI](https://fastapi.tiangolo.com/)
+- [Documentation Uvicorn](https://www.uvicorn.org/)
+- [Documentation Pydantic](https://docs.pydantic.dev/latest/)
+- [Documentation PyWPS](https://pywps.readthedocs.io/)
+- [Documentation Celery](https://docs.celeryq.dev/en/stable/)
+- [Documentation Flower](https://flower.readthedocs.io/en/latest/)
+- [Documentation Locust](https://docs.locust.io/)
+
+### Bases de données et pilotes Python
+
+- [Documentation PostgreSQL](https://www.postgresql.org/docs/current/)
+- [Documentation PostGIS](https://postgis.net/documentation/)
+- [Documentation pgRouting](https://pgrouting.org/documentation.html)
+- [Documentation Psycopg 3](https://www.psycopg.org/psycopg3/docs/)
+- [Documentation Psycopg 2](https://www.psycopg.org/docs/)
+- [Documentation SQLAlchemy](https://docs.sqlalchemy.org/en/20/)
+- [Documentation GeoAlchemy 2](https://geoalchemy-2.readthedocs.io/en/latest/)
+- [Documentation Redis](https://redis.io/docs/latest/)
+- [Documentation redis-py](https://redis-py.readthedocs.io/)
+- [Documentation Neo4j](https://neo4j.com/docs/)
+- [Documentation du pilote Python Neo4j](https://neo4j.com/docs/api/python-driver/current/)
+- [Documentation Neo4j Graph Data Science](https://neo4j.com/docs/graph-data-science/current/)
+- [Documentation MongoDB](https://www.mongodb.com/docs/)
+- [Documentation PyMongo](https://pymongo.readthedocs.io/)
+
+### Intelligence artificielle et vision par ordinateur
+
+- [Documentation PyTorch](https://pytorch.org/docs/stable/index.html)
+- [Documentation Torchvision](https://pytorch.org/vision/stable/index.html)
+- [Documentation Ultralytics](https://docs.ultralytics.com/)
+- [Documentation Segment Geospatial (SamGeo)](https://samgeo.gishub.org/)
+
+### Serveurs et outils SIG
+
+- [Documentation QGIS Server](https://docs.qgis.org/latest/fr/docs/server_manual/)
+- [PyQGIS Developer Cookbook](https://docs.qgis.org/latest/en/docs/pyqgis_developer_cookbook/)
+- [Documentation GeoServer](https://docs.geoserver.org/stable/en/user/)
+- [Documentation MapServer](https://mapserver.org/documentation.html)
+- [Documentation Mapnik](https://get-map.org/mapnik-lost-manual/book.html)
 
 ---
 
