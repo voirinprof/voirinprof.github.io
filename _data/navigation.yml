@@ -9,6 +9,8 @@ main:
       url: /en/postgresql-postgis-basics/
     - title: "Server"
       url: /en/celery-intro/
+    - title: "AI"
+      url: /en/faster-rcnn/
     - title: "Client"
       url: /en/js-basics/
     - title: "Miscellaneous"
@@ -16,6 +18,8 @@ main:
   fr:
     - title: "Bien débuter"
       url: /fr/quick-start/
+    - title: "IA"
+      url: /fr/faster-rcnn/
     - title: "Dev"
       url: /fr/codespaces-intro/
     - title: "Base de données"
@@ -40,12 +44,16 @@ quick-links:
         children:
           - title: "The basics in Python"
             url: /en/python-basics/
+          - title: "Best practices"
+            url: /en/best-practices/
           - title: "Classes"
             url: /en/python-classes-intro/
           - title: "First concepts in GeoInfo"
             url: /en/gis-level1/
           - title: "Advanced concepts in GeoInfo"
-            url: /en/gis-level2/      
+            url: /en/gis-level2/
+          - title: "Advanced vector and raster"
+            url: /en/advanced-vector-raster/
     fr:
       - title: "Bien débuter"
         children:      
@@ -58,12 +66,16 @@ quick-links:
         children:
           - title: "Les bases en Python"
             url: /fr/python-basics/
+          - title: "Bonnes pratiques"
+            url: /fr/best-practices/
           - title: "Les classes"
             url: /fr/python-classes-intro/
           - title: "Premières notions en GéoInfo"
             url: /fr/gis-level1/
           - title: "Notions avancées en GéoInfo"
             url: /fr/gis-level2/
+          - title: "Vecteur et raster avancés"
+            url: /fr/advanced-vector-raster/
   database:
     en:
       - title: "SQL/NoSQL Basics"
@@ -131,6 +143,14 @@ quick-links:
             url: /en/mapnik-intro/
           - title: "QGIS Server and Python"
             url: /en/qgis-server-intro/
+      - title: "Large-Scale Geospatial Data"
+        children:
+          - title: "STAC, odc-stac, Dask, and xarray"
+            url: /en/stac-dask/
+      - title: "Cloud Geospatial Processing"
+        children:
+          - title: "Google Earth Engine"
+            url: /en/google-earth-engine/
     fr:
       - title: "Automatisation"
         children:
@@ -150,6 +170,14 @@ quick-links:
             url: /fr/mapnik-intro/
           - title: "QGIS Server et Python"
             url: /fr/qgis-server-intro/
+      - title: "Données géospatiales à grande échelle"
+        children:
+          - title: "STAC, odc-stac, Dask et xarray"
+            url: /fr/stac-dask/
+      - title: "Traitement géospatial dans le cloud"
+        children:
+          - title: "Google Earth Engine"
+            url: /fr/google-earth-engine/
   client:
     en:
       - title: "Basics"
@@ -217,3 +245,26 @@ quick-links:
             url: /fr/testing-useful/
           - title: "Scalabilité et haute disponibilité"
             url: /fr/scalability/
+  ai:
+    en:
+      - title: "AI and Remote Sensing"
+        children:
+          - title: "Object Detection with Faster R-CNN"
+            url: /en/faster-rcnn/
+          - title: "Car Detection with YOLO"
+            url: /en/yolo-detection/
+          - title: "Oriented Detection with YOLO-OBB"
+            url: /en/yolo-obb/
+          - title: "Satellite Segmentation with SamGeo"
+            url: /en/samgeo/
+    fr:
+      - title: "IA et télédétection"
+        children:
+          - title: "Détection d’objets avec Faster R-CNN"
+            url: /fr/faster-rcnn/
+          - title: "Détection de voitures avec YOLO"
+            url: /fr/yolo-detection/
+          - title: "Détection orientée avec YOLO-OBB"
+            url: /fr/yolo-obb/
+          - title: "Segmentation satellitaire avec SamGeo"
+            url: /fr/samgeo/
