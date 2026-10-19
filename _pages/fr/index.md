@@ -7,6 +7,21 @@ author_profile: true
 sidebar: false
 full: true
 ---
+
+<div class="notice" markdown="1" style="border-radius: 12px;">
+
+[<img src="/assets/img/logo-pythongeolab-391x391.png" alt="Logo de Python GeoLab" width="140" style="float: right; max-width: 35%; height: auto; margin: 0 0 1em 1.5em;">](https://mylab.pythongeolab.com/fr/)
+
+#### Envie de pratiquer Python en géomatique ?
+
+MyLab Python GeoLab propose aux étudiantes et étudiants francophones des exercices de Python appliqué à la géomatique.
+
+[Découvrir MyLab Python GeoLab](https://mylab.pythongeolab.com/fr/)
+
+<div style="clear: both;"></div>
+
+</div>
+
 # Bienvenue sur ce site dédié à la géomatique en Python !
 
 Si vous êtes un développeur Python intéressé par la géomatique, ce site est fait pour vous. Une variété de ressources et d'outils sont disponibles pour vous aider à mieux comprendre et appliquer les concepts de la géomatique dans votre travail en Python.
@@ -141,4 +156,3 @@ pre.mermaid .mindmap-edges .edge {
   stroke:rgb(248, 246, 246)!important;
 }
 </style>
-
