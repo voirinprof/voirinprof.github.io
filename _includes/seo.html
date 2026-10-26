@@ -114,6 +114,15 @@
 
 <link rel="canonical" href="{{ canonical_url }}">
 
+{%- assign page_path = page.url | replace: "index.html", "" -%}
+{%- assign page_prefix = page_path | slice: 0, 4 -%}
+{%- if page_prefix == "/fr/" or page_prefix == "/en/" -%}
+  {%- assign page_slug = page_path | remove_first: page_prefix %}
+<link rel="alternate" hreflang="fr" href="{{ '/fr/' | append: page_slug | absolute_url }}">
+<link rel="alternate" hreflang="en" href="{{ '/en/' | append: page_slug | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/fr/' | append: page_slug | absolute_url }}">
+{%- endif %}
+
 {% if paginator.previous_page %}
   <link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
 {% endif %}
